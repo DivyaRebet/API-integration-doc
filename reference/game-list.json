@@ -1176,7 +1176,7 @@
         }
       }
     },
-    "/{game}/wager-1": {
+    "/bets": {
       "post": {
         "summary": "Copy of Copy of Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -1526,17 +1526,7 @@
             }
           }
         },
-        "parameters": [
-          {
-            "in": "path",
-            "name": "game",
-            "schema": {
-              "type": "string"
-            },
-            "required": true,
-            "description": "Game code"
-          }
-        ],
+        "parameters": [],
         "x-readme": {
           "code-samples": [
             {
