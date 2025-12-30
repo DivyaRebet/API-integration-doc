@@ -504,8 +504,8 @@
         }
       }
     },
-    "/client/player/authorize-game-1": {
-      "post": {
+    "/{game}/game-setting/{game}/game-setting?tenant={tenant}&token={token}&currency={currency}": {
+      "get": {
         "summary": "Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
         "operationId": "post_clientplayerauthorize-game-1",
@@ -671,7 +671,66 @@
             }
           }
         },
-        "parameters": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "game",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "tenant",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "token",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "currency",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "tenant",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Tenant code"
+          },
+          {
+            "in": "query",
+            "name": "token",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Auth token for player",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "currency",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Currency code",
+            "required": true
+          }
+        ],
         "x-readme": {
           "code-samples": [
             {
