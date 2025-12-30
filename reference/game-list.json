@@ -1534,7 +1534,8 @@
               "type": "string",
               "format": "date-time"
             },
-            "required": true
+            "required": true,
+            "description": "Start timestamp of history filter in ISO 8601 format"
           },
           {
             "in": "query",
@@ -1543,7 +1544,8 @@
               "type": "string",
               "format": "date-time"
             },
-            "required": true
+            "required": true,
+            "description": "End timestamp of history filter in ISO 8601 format"
           },
           {
             "in": "query",
@@ -1551,7 +1553,8 @@
             "schema": {
               "type": "string"
             },
-            "required": true
+            "required": true,
+            "description": "Tenant identifier used to segment game data"
           },
           {
             "in": "query",
@@ -1559,7 +1562,8 @@
             "schema": {
               "type": "string"
             },
-            "required": true
+            "required": true,
+            "description": "Game code to filter bet history (passed as query, not path)"
           },
           {
             "in": "query",
@@ -1567,23 +1571,26 @@
             "schema": {
               "type": "string"
             },
-            "required": true
+            "required": true,
+            "description": "Player authentication token"
           },
           {
             "in": "query",
             "name": "take",
             "schema": {
-              "type": "string"
+              "type": "number"
             },
-            "required": true
+            "required": true,
+            "description": "Maximum number of records to return (page size/limit)"
           },
           {
             "in": "query",
             "name": "skip",
             "schema": {
-              "type": "string"
+              "type": "number"
             },
-            "required": true
+            "required": true,
+            "description": "Number of records to skip for pagination (offset)"
           }
         ],
         "x-readme": {
