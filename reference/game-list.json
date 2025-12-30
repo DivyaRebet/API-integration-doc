@@ -363,19 +363,33 @@
                   "OK": {
                     "summary": "OK",
                     "value": {
-                      "id": "019b6913-e803-7051-9ba8-ca0f0e494898",
-                      "name": "Whisker Wars",
-                      "description": "Whiskers Wars",
-                      "code": "whisker-wars",
-                      "status": 0,
-                      "url": "https://example.com/super-fun-game",
-                      "logicUrl": "http://dev-logic-whisker-wars:5000",
-                      "type": 0,
-                      "rtp": "96.5",
-                      "maxWin": "100000",
-                      "baseBet": "1",
-                      "createdAt": "Mon Dec 29 2025 07:47:50 GMT+0000 (Coordinated Universal Time)",
-                      "updatedAt": "Mon Dec 29 2025 07:47:50 GMT+0000 (Coordinated Universal Time)"
+                      "game": "pay-day",
+                      "playerId": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
+                      "tenant": "kdemo",
+                      "currency": {
+                        "name": "US Dollar",
+                        "code": "USD",
+                        "symbol": "$",
+                        "type": "FIAT",
+                        "isPrefix": true,
+                        "rateToUsd": 0
+                      },
+                      "balance": "10000",
+                      "playerState": {
+                        "freeSpins": 0,
+                        "freeSpinsWinAmount": 0
+                      },
+                      "gameState": {
+                        "data": {
+                          "previous": {
+                            "minor": "300.35",
+                            "major": "1500.81",
+                            "grand": "12000.36"
+                          }
+                        },
+                        "freeSpins": 0,
+                        "freeSpinsWinAmount": 0
+                      }
                     }
                   }
                 }
