@@ -27,8 +27,21 @@
                     "games": {
                       "type": "array",
                       "items": {
-                        "properties": {},
-                        "type": "object"
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "Unique game identifier"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Game name"
+                          }
+                        },
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "name"
+                        ]
                       },
                       "description": "List of games for the tenant"
                     }
