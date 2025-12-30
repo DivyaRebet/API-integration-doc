@@ -1367,11 +1367,6 @@
                             "default": true,
                             "description": "True if this was the final free spin in sequence"
                           },
-                          "isTriggerBonusA": {
-                            "type": "boolean",
-                            "example": false,
-                            "default": true
-                          },
                           "isTriggerBonusB": {
                             "type": "boolean",
                             "example": false,
@@ -1387,15 +1382,6 @@
                             "example": false,
                             "default": true,
                             "description": "True if this spin was triggered via a buy-feature bet"
-                          },
-                          "multiplierArr": {
-                            "type": "array",
-                            "items": {
-                              "type": "integer",
-                              "example": 0,
-                              "default": 0
-                            },
-                            "description": "Multiplier applied to each reel position "
                           }
                         },
                         "description": "Detailed outcome of the spin/wager execution",
