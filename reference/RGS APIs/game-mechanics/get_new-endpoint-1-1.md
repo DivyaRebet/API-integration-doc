@@ -1,5 +1,5 @@
 ---
-title: Copy of Get Game
+title: Authorize
 excerpt: You can use this API endpoint to get the game info using tenant and gameId.
 api:
   file: game-list.json
