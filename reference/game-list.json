@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "https://dev-rgs.kerma.games/gamelist"
+      "url": "https://dev-rgs.kerma.games"
     }
   ],
   "tags": [],
