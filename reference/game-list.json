@@ -18,7 +18,27 @@
         "operationId": "get_new-endpoint",
         "responses": {
           "200": {
-            "description": "Successful response"
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "games": {
+                      "type": "array",
+                      "items": {
+                        "properties": {},
+                        "type": "object"
+                      },
+                      "description": "List of games for the tenant"
+                    }
+                  },
+                  "required": [
+                    "games"
+                  ]
+                }
+              }
+            }
           }
         },
         "parameters": [
