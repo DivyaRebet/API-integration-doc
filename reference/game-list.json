@@ -138,7 +138,7 @@
         }
       }
     },
-    "/{tenant}": {
+    "/{tenant}/{gameId}": {
       "get": {
         "summary": "Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
