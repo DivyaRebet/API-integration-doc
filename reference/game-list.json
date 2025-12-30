@@ -1000,11 +1000,13 @@
                     "freeSpins": {
                       "type": "integer",
                       "example": 0,
-                      "default": 0
+                      "default": 0,
+                      "description": "Free spins remaining after resolving this bet"
                     },
                     "status": {
                       "type": "string",
-                      "example": "RESOLVED"
+                      "example": "RESOLVED",
+                      "description": "Bet resolution status (RESOLVED)"
                     }
                   },
                   "required": [
