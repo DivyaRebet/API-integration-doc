@@ -1274,12 +1274,14 @@
                           "betAmount": {
                             "type": "integer",
                             "example": 20,
-                            "default": 0
+                            "default": 0,
+                            "description": "Total wagered amount for the bet, stored as string for precision"
                           },
                           "winAmount": {
                             "type": "integer",
                             "example": 0,
-                            "default": 0
+                            "default": 0,
+                            "description": "Core base bet unit before multipliers"
                           },
                           "result": {
                             "type": "object",
@@ -1296,7 +1298,8 @@
                                   "properties": {}
                                 }
                               }
-                            }
+                            },
+                            "description": "Result having information about winlines and win"
                           },
                           "baseBet": {
                             "type": "integer",
@@ -1397,7 +1400,12 @@
                             }
                           }
                         },
-                        "description": "Detailed outcome of the spin/wager execution"
+                        "description": "Detailed outcome of the spin/wager execution",
+                        "required": [
+                          "betAmount",
+                          "winAmount",
+                          "result"
+                        ]
                       },
                       "betFreeSpins": {
                         "type": "array",
@@ -1419,7 +1427,13 @@
                       "id",
                       "game",
                       "tenant",
-                      "currency"
+                      "currency",
+                      "status",
+                      "type",
+                      "betLevel",
+                      "betSize",
+                      "baseBet",
+                      "betAmount"
                     ]
                   }
                 },
