@@ -1,6 +1,6 @@
 ---
 title: Game List
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
+excerpt: You can use this API endpoint to automatically get a list of games.
 api:
   file: game-list.json
   operationId: get_new-endpoint
