@@ -1315,23 +1315,6 @@
                               "default": 0
                             }
                           },
-                          "matrixAfterExpansion": {
-                            "type": "array",
-                            "items": {
-                              "type": "integer",
-                              "example": 6,
-                              "default": 0
-                            },
-                            "description": ""
-                          },
-                          "wildExpandPositions": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {}
-                            },
-                            "description": "Positions where the wild expanded"
-                          },
                           "winFreeSpins": {
                             "type": "integer",
                             "example": 0,
