@@ -1177,7 +1177,7 @@
       }
     },
     "/bets": {
-      "post": {
+      "get": {
         "summary": "Copy of Copy of Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
         "operationId": "post_{game}wager-1",
