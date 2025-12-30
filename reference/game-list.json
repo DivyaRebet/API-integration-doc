@@ -35,12 +35,45 @@
                           "name": {
                             "type": "string",
                             "description": "Game name"
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": "Game description"
+                          },
+                          "code": {
+                            "type": "string",
+                            "description": "URL-friendly game code"
+                          },
+                          "status": {
+                            "type": "number",
+                            "description": "Game status"
+                          },
+                          "url": {
+                            "type": "string",
+                            "description": "Public game URL"
+                          },
+                          "logicUrl": {
+                            "type": "string",
+                            "description": "Game logic service URL"
+                          },
+                          "type": {
+                            "type": "number",
+                            "description": "Game type"
+                          },
+                          "rtp": {
+                            "type": "string",
+                            "description": "Return to Player percentage"
                           }
                         },
                         "type": "object",
                         "required": [
                           "id",
-                          "name"
+                          "name",
+                          "code",
+                          "status",
+                          "url",
+                          "type",
+                          "rtp"
                         ]
                       },
                       "description": "List of games for the tenant"
