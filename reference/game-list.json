@@ -450,6 +450,34 @@
           "samples-languages": [
             "shell"
           ]
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "tenant": "kdemo",
+                    "game": "pay-day",
+                    "token": "01DK0037EXSEYBVY9HKTE32F1PF",
+                    "currency": "USD"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
