@@ -11,7 +11,7 @@
   ],
   "tags": [],
   "paths": {
-    "/new-endpoint": {
+    "/gamelist": {
       "get": {
         "summary": "New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -20,7 +20,17 @@
           "200": {
             "description": "Successful response"
           }
-        }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "tenant",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ]
       }
     }
   },
