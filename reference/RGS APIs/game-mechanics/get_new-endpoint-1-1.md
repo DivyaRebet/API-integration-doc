@@ -1,6 +1,8 @@
 ---
 title: Authorize
-excerpt: You can use this API endpoint to get the game info using tenant and gameId.
+excerpt: >-
+  This endpoint validates the player and creates a new game session. It must be
+  called before accessing game configuration or placing wagers.
 api:
   file: game-list.json
   operationId: get_{tenant}{gameId}-1
