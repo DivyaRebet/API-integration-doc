@@ -504,7 +504,7 @@
         }
       }
     },
-    "/{game}/game-setting/{game}/game-setting?tenant={tenant}&token={token}&currency={currency}": {
+    "/{game}/game-setting": {
       "get": {
         "summary": "Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -673,38 +673,6 @@
         },
         "parameters": [
           {
-            "in": "path",
-            "name": "game",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          },
-          {
-            "in": "path",
-            "name": "tenant",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          },
-          {
-            "in": "path",
-            "name": "token",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          },
-          {
-            "in": "path",
-            "name": "currency",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          },
-          {
             "in": "query",
             "name": "tenant",
             "schema": {
@@ -728,6 +696,14 @@
               "type": "string"
             },
             "description": "Currency code",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "game",
+            "schema": {
+              "type": "string"
+            },
             "required": true
           }
         ],
