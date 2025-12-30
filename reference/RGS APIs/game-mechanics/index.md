@@ -1,29 +1,36 @@
 ---
 title: Game Mechanics
 excerpt: >-
-  This section describes the core gameplay flow, including player authorization,
-  game initialization, wagering actions, and retrieval of game history.
+  Explore the core gameplay flow, including player authorization, game
+  initialization, wagering actions, and retrieval of game history.
 deprecated: false
 hidden: true
+link:
+  new_tab: false
 metadata:
   robots: index
 ---
+<Columns layout="auto">
+  <Column>
+    <Accordion title="🔐 Authorize Player" icon="user-check">
+      Verifies the player and initiates a new game session.
+    </Accordion>
+  </Column>
+  <Column>
+    <Accordion title="⚙️ Game Settings (Initial Configuration)" icon="cogs">
+      Returns the initial game configuration required to begin gameplay.
+    </Accordion>
+  </Column>
+  <Column>
+    <Accordion title="🎲 Wager (Spin / Bet)" icon="dice">
+      Executes a spin or wager action during gameplay.
+    </Accordion>
+  </Column>
+  <Column>
+    <Accordion title="📜 Game History" icon="history">
+      Retrieves past wagers and outcomes for a specific game session.
+    </Accordion>
+  </Column>
+</Columns>
+
 These endpoints are typically called in sequence during an active game session.
-
-<br />
-
-🔐 **Authorize Player**
-
-Verifies the player and initiates a new game session.
-
-⚙️ **Game Settings (Initial Configuration)**
-
-Returns the initial game configuration required to begin gameplay.
-
-🎲 **Wager (Spin / Bet)**
-
-Executes a spin or wager action during gameplay.
-
-📜 **Game History**
-
-Retrieves past wagers and outcomes for a specific game session.
