@@ -780,30 +780,36 @@
                   "properties": {
                     "betAmount": {
                       "type": "string",
-                      "example": "10"
+                      "example": "10",
+                      "description": "Amount the player wagered (string to preserve precision)"
                     },
                     "winAmount": {
                       "type": "string",
-                      "example": "0"
+                      "example": "0",
+                      "description": "Amount won by the player from this bet"
                     },
                     "betSize": {
                       "type": "integer",
                       "example": 10,
-                      "default": 0
+                      "default": 0,
+                      "description": "Numeric bet amount used by the game engine"
                     },
                     "betLevel": {
                       "type": "integer",
                       "example": 1,
-                      "default": 0
+                      "default": 0,
+                      "description": "Bet multiplier level selected by player"
                     },
                     "baseBet": {
                       "type": "integer",
                       "example": 1,
-                      "default": 0
+                      "default": 0,
+                      "description": "Base unit of bet before multipliers"
                     },
                     "totalFreeSpinsWinAmount": {
                       "type": "string",
-                      "example": "0"
+                      "example": "0",
+                      "description": "Total win amount accumulated from all free spins in the session"
                     },
                     "result": {
                       "type": "object",
@@ -833,7 +839,8 @@
                             }
                           }
                         }
-                      }
+                      },
+                      "description": ""
                     },
                     "matrix": {
                       "type": "array",
@@ -844,65 +851,78 @@
                           "example": 1,
                           "default": 0
                         }
-                      }
+                      },
+                      "description": "Reel outcome matrix for the spin result"
                     },
                     "winFreeSpins": {
                       "type": "integer",
                       "example": 0,
-                      "default": 0
+                      "default": 0,
+                      "description": "Free spins awarded from this bet"
                     },
                     "type": {
                       "type": "string",
-                      "example": "NORMAL"
+                      "example": "NORMAL",
+                      "description": "Bet type such as NORMAL, FREE_SPIN, etc."
                     },
                     "isFreeSpin": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if this spin was a free spin"
                     },
                     "isEndRound": {
                       "type": "boolean",
                       "example": true,
-                      "default": true
+                      "default": true,
+                      "description": "Marks whether the current betting round is finished"
                     },
                     "isLastFreeSpins": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if this was the final free spin in the sequence"
                     },
                     "isMaxWinNormal": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if normal win reached max allowed limit"
                     },
                     "isMaxCapNormal": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if normal win was capped due to limit"
                     },
                     "isMaxWinJackpot": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if jackpot win hit max allowed limit"
                     },
                     "isMaxCapJackpot": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "Indicates if jackpot win was capped"
                     },
                     "bracket": {
                       "type": "string",
-                      "example": "normal"
+                      "example": "normal",
+                      "description": "Win category/bracket for payout calculations"
                     },
                     "isTriggerFirstZeroRespin": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "True if first zero-win respin was triggered"
                     },
                     "isTriggerSecondZeroRespin": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "True if second zero-win respin was triggered"
                     },
                     "respinReels": {
                       "type": "array",
@@ -970,7 +990,32 @@
                       "type": "string",
                       "example": "RESOLVED"
                     }
-                  }
+                  },
+                  "required": [
+                    "betAmount",
+                    "winAmount",
+                    "betSize",
+                    "betLevel",
+                    "baseBet",
+                    "totalFreeSpinsWinAmount",
+                    "result",
+                    "matrix",
+                    "winFreeSpins",
+                    "type",
+                    "isFreeSpin",
+                    "isEndRound",
+                    "isLastFreeSpins",
+                    "bracket",
+                    "betId",
+                    "playerId",
+                    "roundId",
+                    "startingBalance",
+                    "endingBalance",
+                    "currency",
+                    "walletType",
+                    "freeSpins",
+                    "status"
+                  ]
                 },
                 "examples": {
                   "OK": {
