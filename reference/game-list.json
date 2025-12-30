@@ -120,7 +120,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-rgs.kerma.games/gamelist?tenant=kdemo'",
+              "code": "curl --location \"https://dev-rgs.kerma.games/gamelist?tenant=kdemo\"",
               "language": "shell",
               "name": ""
             }
