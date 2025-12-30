@@ -457,12 +457,28 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
+                  "tenant": {
+                    "type": "string",
+                    "description": "Tenant code"
+                  },
+                  "game": {
+                    "type": "string",
+                    "description": "Game code"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "Player session token (secure auth token)"
+                  },
+                  "currency": {
+                    "type": "string",
+                    "description": "Currency code for balance and gameplay"
                   }
                 },
                 "required": [
-                  "name"
+                  "tenant",
+                  "game",
+                  "token",
+                  "currency"
                 ]
               },
               "examples": {
