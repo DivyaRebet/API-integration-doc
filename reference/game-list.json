@@ -979,19 +979,23 @@
                     },
                     "startingBalance": {
                       "type": "string",
-                      "example": "10000"
+                      "example": "10000",
+                      "description": "Player balance before the bet was placed"
                     },
                     "endingBalance": {
                       "type": "string",
-                      "example": "9990"
+                      "example": "9990",
+                      "description": "Player balance after bet resolution"
                     },
                     "currency": {
                       "type": "string",
-                      "example": "USD"
+                      "example": "USD",
+                      "description": "Currency used for the bet (e.g., USD)"
                     },
                     "walletType": {
                       "type": "string",
-                      "example": "CASH"
+                      "example": "CASH",
+                      "description": "Wallet category used for bet (CASH, BONUS, etc.)"
                     },
                     "freeSpins": {
                       "type": "integer",
