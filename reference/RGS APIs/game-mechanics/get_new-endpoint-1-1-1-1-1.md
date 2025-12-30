@@ -1,8 +1,8 @@
 ---
 title: History
 excerpt: >-
-  This endpoint validates the player and creates a new game session. It must be
-  called before accessing game configuration or placing wagers.
+  Fetches resolved bet history for a player in a specific game and tenant within
+  a given date range. Supports pagination using take and skip.
 api:
   file: game-list.json
   operationId: post_{game}wager-1
