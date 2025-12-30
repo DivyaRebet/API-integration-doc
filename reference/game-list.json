@@ -1304,7 +1304,8 @@
                           "baseBet": {
                             "type": "integer",
                             "example": 2,
-                            "default": 0
+                            "default": 0,
+                            "description": "Core base bet unit before multipliers"
                           },
                           "matrix": {
                             "type": "array",
@@ -1320,57 +1321,68 @@
                               "type": "integer",
                               "example": 6,
                               "default": 0
-                            }
+                            },
+                            "description": ""
                           },
                           "wildExpandPositions": {
                             "type": "array",
                             "items": {
                               "type": "object",
                               "properties": {}
-                            }
+                            },
+                            "description": "Positions where the wild expanded"
                           },
                           "winFreeSpins": {
                             "type": "integer",
                             "example": 0,
-                            "default": 0
+                            "default": 0,
+                            "description": "Number of free spins awarded from this spin"
                           },
                           "type": {
                             "type": "string",
-                            "example": "NORMAL"
+                            "example": "NORMAL",
+                            "description": "Bet/spin category such as NORMAL, FREE_SPIN, etc."
                           },
                           "isFreeSpin": {
                             "type": "boolean",
                             "example": false,
-                            "default": true
+                            "default": true,
+                            "description": "Indicates if this spin was played using a free spin"
                           },
                           "totalFreeSpinsWinAmount": {
                             "type": "integer",
                             "example": 0,
-                            "default": 0
+                            "default": 0,
+                            "description": "Total winnings accumulated from free spins in this round"
                           },
                           "bracket": {
                             "type": "string",
-                            "example": "normal"
+                            "example": "normal",
+                            "description": "Win bracket classification "
                           },
                           "isMaxWin": {
                             "type": "boolean",
                             "example": false,
-                            "default": true
+                            "default": true,
+                            "description": "True if the spin win hit the max payout limit"
                           },
                           "isMaxCap": {
                             "type": "boolean",
                             "example": false,
-                            "default": true
+                            "default": true,
+                            "description": "True if the spin payout was capped due to max limit"
                           },
                           "isEndRound": {
                             "type": "boolean",
                             "example": true,
-                            "default": true
+                            "default": true,
+                            "description": "Indicates if this spin ended the betting round"
                           },
                           "isLastFreeSpins": {
                             "type": "boolean",
                             "example": false,
-                            "default": true
+                            "default": true,
+                            "description": "True if this was the final free spin in sequence"
                           },
                           "isTriggerBonusA": {
                             "type": "boolean",
@@ -1384,12 +1396,14 @@
                           },
                           "spinType": {
                             "type": "string",
-                            "example": "NORMAL"
+                            "example": "NORMAL",
+                            "description": "Spin execution type (NORMAL, etc.)"
                           },
                           "isBuyFeature": {
                             "type": "boolean",
                             "example": false,
-                            "default": true
+                            "default": true,
+                            "description": "True if this spin was triggered via a buy-feature bet"
                           },
                           "multiplierArr": {
                             "type": "array",
@@ -1397,14 +1411,23 @@
                               "type": "integer",
                               "example": 0,
                               "default": 0
-                            }
+                            },
+                            "description": "Multiplier applied to each reel position "
                           }
                         },
                         "description": "Detailed outcome of the spin/wager execution",
                         "required": [
                           "betAmount",
                           "winAmount",
-                          "result"
+                          "result",
+                          "spinType",
+                          "isLastFreeSpins",
+                          "isEndRound",
+                          "bracket",
+                          "totalFreeSpinsWinAmount",
+                          "isFreeSpin",
+                          "type",
+                          "winFreeSpins"
                         ]
                       },
                       "betFreeSpins": {
