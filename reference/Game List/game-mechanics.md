@@ -10,14 +10,20 @@ metadata:
 ---
 These endpoints are typically called in sequence during an active game session.
 
-**Authorize Player**
-Verifies player and creates a game session.
+<br />
 
-**Game Settings (Initial Configuration)**
-Returns initial game configuration required to start gameplay.
+🔐 Authorize Player
 
-**Wager (Spin)**
-Executes a wager or spin action during gameplay.
+Verifies the player and initiates a new game session.
 
-**Game History**
-Retrieves historical wagers and outcomes for a game session.
+⚙️ Game Settings (Initial Configuration)
+
+Returns the initial game configuration required to begin gameplay.
+
+🎲 Wager (Spin / Bet)
+
+Executes a spin or wager action during gameplay.
+
+📜 Game History
+
+Retrieves past wagers and outcomes for a specific game session.
