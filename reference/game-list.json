@@ -293,15 +293,18 @@
                   "properties": {
                     "game": {
                       "type": "string",
-                      "example": "pay-day"
+                      "example": "pay-day",
+                      "description": "Authorized game code"
                     },
                     "playerId": {
                       "type": "string",
-                      "example": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5"
+                      "example": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
+                      "description": "Unique ID of the authenticated player"
                     },
                     "tenant": {
                       "type": "string",
-                      "example": "kdemo"
+                      "example": "kdemo",
+                      "description": "Tenant under which the game session is created"
                     },
                     "currency": {
                       "type": "object",
@@ -332,11 +335,13 @@
                           "example": 0,
                           "default": 0
                         }
-                      }
+                      },
+                      "description": ""
                     },
                     "balance": {
                       "type": "string",
-                      "example": "10000"
+                      "example": "10000",
+                      "description": "Current player wallet balance in the selected currency"
                     },
                     "playerState": {
                       "type": "object",
