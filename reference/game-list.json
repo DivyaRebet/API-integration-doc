@@ -138,7 +138,7 @@
         }
       }
     },
-    "/gamelist-1": {
+    "/{tenant}": {
       "get": {
         "summary": "Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -248,6 +248,16 @@
               "type": "string",
               "default": "kdemo"
             },
+            "required": true,
+            "description": "tenant code"
+          },
+          {
+            "in": "query",
+            "name": "gameId",
+            "schema": {
+              "type": "string"
+            },
+            "description": "game id",
             "required": true
           }
         ],
