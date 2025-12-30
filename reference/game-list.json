@@ -1175,6 +1175,417 @@
           }
         }
       }
+    },
+    "/{game}/wager-1": {
+      "post": {
+        "summary": "Copy of Copy of Copy of Copy of Copy of New Endpoint",
+        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "operationId": "post_{game}wager-1",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "betAmount": {
+                      "type": "string",
+                      "example": "10",
+                      "description": "Amount the player wagered (string to preserve precision)"
+                    },
+                    "winAmount": {
+                      "type": "string",
+                      "example": "0",
+                      "description": "Amount won by the player from this bet"
+                    },
+                    "betSize": {
+                      "type": "integer",
+                      "example": 10,
+                      "default": 0,
+                      "description": "Numeric bet amount used by the game engine"
+                    },
+                    "betLevel": {
+                      "type": "integer",
+                      "example": 1,
+                      "default": 0,
+                      "description": "Bet multiplier level selected by player"
+                    },
+                    "baseBet": {
+                      "type": "integer",
+                      "example": 1,
+                      "default": 0,
+                      "description": "Base unit of bet before multipliers"
+                    },
+                    "totalFreeSpinsWinAmount": {
+                      "type": "string",
+                      "example": "0",
+                      "description": "Total win amount accumulated from all free spins in the session"
+                    },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "totalWin": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        },
+                        "winLines": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "winPosition": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              },
+                              "winAmount": {
+                                "type": "integer",
+                                "example": 0,
+                                "default": 0
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "description": ""
+                    },
+                    "matrix": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "example": 1,
+                          "default": 0
+                        }
+                      },
+                      "description": "Reel outcome matrix for the spin result"
+                    },
+                    "winFreeSpins": {
+                      "type": "integer",
+                      "example": 0,
+                      "default": 0,
+                      "description": "Free spins awarded from this bet"
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "NORMAL",
+                      "description": "Bet type such as NORMAL, FREE_SPIN, etc."
+                    },
+                    "isFreeSpin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if this spin was a free spin"
+                    },
+                    "isEndRound": {
+                      "type": "boolean",
+                      "example": true,
+                      "default": true,
+                      "description": "Marks whether the current betting round is finished"
+                    },
+                    "isLastFreeSpins": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if this was the final free spin in the sequence"
+                    },
+                    "isMaxWinNormal": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if normal win reached max allowed limit"
+                    },
+                    "isMaxCapNormal": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if normal win was capped due to limit"
+                    },
+                    "isMaxWinJackpot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if jackpot win hit max allowed limit"
+                    },
+                    "isMaxCapJackpot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "Indicates if jackpot win was capped"
+                    },
+                    "bracket": {
+                      "type": "string",
+                      "example": "normal",
+                      "description": "Win category/bracket for payout calculations"
+                    },
+                    "isTriggerFirstZeroRespin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "True if first zero-win respin was triggered"
+                    },
+                    "isTriggerSecondZeroRespin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "True if second zero-win respin was triggered"
+                    },
+                    "respinReels": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {}
+                      },
+                      "description": "Reels that participated in respin if triggered"
+                    },
+                    "minorPrize": {
+                      "type": "string",
+                      "example": "301.4",
+                      "description": "Last recorded minor jackpot tier value"
+                    },
+                    "majorPrize": {
+                      "type": "string",
+                      "example": "1501.44",
+                      "description": "Last recorded major jackpot tier value"
+                    },
+                    "grandPrize": {
+                      "type": "string",
+                      "example": "12000.78",
+                      "description": "Last recorded grand jackpot tier value"
+                    },
+                    "jackPotWin": {
+                      "type": "string",
+                      "example": "0",
+                      "description": "Amount won from jackpot in this bet"
+                    },
+                    "isTriggerJackPot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true,
+                      "description": "True if this bet triggered a jackpot"
+                    },
+                    "jackPotType": {
+                      "type": "string",
+                      "description": "Type of jackpot triggered (e.g., MINOR, MAJOR, GRAND), null if none"
+                    },
+                    "betId": {
+                      "type": "string",
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "description": "Unique identifier for the bet transaction"
+                    },
+                    "playerId": {
+                      "type": "string",
+                      "example": "b0222334-ec12-41d6-ad47-0ea899221fa2",
+                      "description": "Unique identifier of the player"
+                    },
+                    "roundId": {
+                      "type": "string",
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "description": "Unique identifier linking all bets in the same round"
+                    },
+                    "startingBalance": {
+                      "type": "string",
+                      "example": "10000",
+                      "description": "Player balance before the bet was placed"
+                    },
+                    "endingBalance": {
+                      "type": "string",
+                      "example": "9990",
+                      "description": "Player balance after bet resolution"
+                    },
+                    "currency": {
+                      "type": "string",
+                      "example": "USD",
+                      "description": "Currency used for the bet (e.g., USD)"
+                    },
+                    "walletType": {
+                      "type": "string",
+                      "example": "CASH",
+                      "description": "Wallet category used for bet (CASH, BONUS, etc.)"
+                    },
+                    "freeSpins": {
+                      "type": "integer",
+                      "example": 0,
+                      "default": 0,
+                      "description": "Free spins remaining after resolving this bet"
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "RESOLVED",
+                      "description": "Bet resolution status (RESOLVED)"
+                    }
+                  },
+                  "required": [
+                    "betAmount",
+                    "winAmount",
+                    "betSize",
+                    "betLevel",
+                    "baseBet",
+                    "totalFreeSpinsWinAmount",
+                    "result",
+                    "matrix",
+                    "winFreeSpins",
+                    "type",
+                    "isFreeSpin",
+                    "isEndRound",
+                    "isLastFreeSpins",
+                    "bracket",
+                    "betId",
+                    "playerId",
+                    "roundId",
+                    "startingBalance",
+                    "endingBalance",
+                    "currency",
+                    "walletType",
+                    "freeSpins",
+                    "status"
+                  ]
+                },
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "betAmount": "10",
+                      "winAmount": "0",
+                      "betSize": 10,
+                      "betLevel": 1,
+                      "baseBet": 1,
+                      "totalFreeSpinsWinAmount": "0",
+                      "result": {
+                        "totalWin": 0,
+                        "winLines": [
+                          {
+                            "winPosition": [],
+                            "winAmount": 0
+                          }
+                        ]
+                      },
+                      "matrix": [
+                        [
+                          1,
+                          0,
+                          4,
+                          3,
+                          0,
+                          1,
+                          6,
+                          0,
+                          1
+                        ]
+                      ],
+                      "winFreeSpins": 0,
+                      "type": "NORMAL",
+                      "isFreeSpin": false,
+                      "isEndRound": true,
+                      "isLastFreeSpins": false,
+                      "isMaxWinNormal": false,
+                      "isMaxCapNormal": false,
+                      "isMaxWinJackpot": false,
+                      "isMaxCapJackpot": false,
+                      "bracket": "normal",
+                      "isTriggerFirstZeroRespin": false,
+                      "isTriggerSecondZeroRespin": false,
+                      "respinReels": [],
+                      "minorPrize": "301.4",
+                      "majorPrize": "1501.44",
+                      "grandPrize": "12000.78",
+                      "jackPotWin": "0",
+                      "isTriggerJackPot": false,
+                      "jackPotType": null,
+                      "betId": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "playerId": "b0222334-ec12-41d6-ad47-0ea899221fa2",
+                      "roundId": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "startingBalance": "10000",
+                      "endingBalance": "9990",
+                      "currency": "USD",
+                      "walletType": "CASH",
+                      "freeSpins": 0,
+                      "status": "RESOLVED"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "game",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Game code"
+          }
+        ],
+        "x-readme": {
+          "code-samples": [
+            {
+              "code": "curl --location 'https://dev-rgs.kerma.games/pay-day/wager' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y; AWSALBCORS=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y' \\\n--data '{\n    \"betSize\": 10,\n    \"betLevel\": 1,\n    \"game\": \"pay-day\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\",\n    \"tenant\": \"kdemo\"   \n}'",
+              "language": "shell",
+              "name": ""
+            }
+          ],
+          "samples-languages": [
+            "shell"
+          ]
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "betSize": {
+                    "type": "number",
+                    "description": "Bet size"
+                  },
+                  "betLevel": {
+                    "type": "number",
+                    "description": "Bet level"
+                  },
+                  "game": {
+                    "type": "string",
+                    "description": "Game code"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "Player session token (secure auth token)"
+                  },
+                  "tenant": {
+                    "type": "string",
+                    "description": "Tenant code"
+                  }
+                },
+                "required": [
+                  "betSize",
+                  "betLevel",
+                  "game",
+                  "token",
+                  "tenant"
+                ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "tenant": "kdemo",
+                    "game": "pay-day",
+                    "token": "01DK0037EXSEYBVY9HKTE32F1PF",
+                    "currency": "USD"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
