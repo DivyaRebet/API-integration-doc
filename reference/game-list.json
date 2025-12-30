@@ -1515,7 +1515,8 @@
             "name": "startDate",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "default": "2025-12-01T12:31:03.282Z"
             },
             "required": true,
             "description": "Start timestamp of history filter in ISO 8601 format"
@@ -1525,7 +1526,8 @@
             "name": "endDate",
             "schema": {
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "default": "2025-12-31T12:31:03.282Z"
             },
             "required": true,
             "description": "End timestamp of history filter in ISO 8601 format"
@@ -1534,7 +1536,8 @@
             "in": "query",
             "name": "tenant",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "kdemo"
             },
             "required": true,
             "description": "Tenant identifier used to segment game data"
@@ -1543,7 +1546,8 @@
             "in": "query",
             "name": "game",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "pay-day"
             },
             "required": true,
             "description": "Game code to filter bet history (passed as query, not path)"
@@ -1552,7 +1556,8 @@
             "in": "query",
             "name": "token",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "01KDQFF3YQF56TA6823HD5ZVGM"
             },
             "required": true,
             "description": "Player authentication token"
@@ -1561,7 +1566,8 @@
             "in": "query",
             "name": "take",
             "schema": {
-              "type": "number"
+              "type": "number",
+              "default": "10"
             },
             "required": true,
             "description": "Maximum number of records to return (page size/limit)"
@@ -1570,7 +1576,8 @@
             "in": "query",
             "name": "skip",
             "schema": {
-              "type": "number"
+              "type": "number",
+              "default": "0"
             },
             "required": true,
             "description": "Number of records to skip for pagination (offset)"
