@@ -1407,7 +1407,20 @@
                         },
                         "description": "List of free spin results tied to this bet (empty when no free spins triggered)"
                       }
-                    }
+                    },
+                    "required": [
+                      "betFreeSpins",
+                      "spinResult",
+                      "endingBalance",
+                      "startingBalance",
+                      "updatedAt",
+                      "createdAt",
+                      "round",
+                      "id",
+                      "game",
+                      "tenant",
+                      "currency"
+                    ]
                   }
                 },
                 "examples": {
