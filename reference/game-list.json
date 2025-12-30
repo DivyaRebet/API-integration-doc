@@ -1193,65 +1193,80 @@
                     "properties": {
                       "betAmount": {
                         "type": "string",
-                        "example": "20"
+                        "example": "20",
+                        "description": "Total wagered amount for the bet, stored as string for precision"
                       },
                       "baseBet": {
                         "type": "integer",
                         "example": 2,
-                        "default": 0
+                        "default": 0,
+                        "description": "Core base bet unit before multipliers"
                       },
                       "betSize": {
                         "type": "string",
-                        "example": "10"
+                        "example": "10",
+                        "description": "Bet amount used by engine, may be numeric or string depending on game config"
                       },
                       "betLevel": {
                         "type": "integer",
                         "example": 1,
-                        "default": 0
+                        "default": 0,
+                        "description": "Bet multiplier level selected by the player"
                       },
                       "type": {
                         "type": "string",
-                        "example": "NORMAL"
+                        "example": "NORMAL",
+                        "description": "Bet/spin category such as NORMAL, BONUS, etc."
                       },
                       "status": {
                         "type": "string",
-                        "example": "RESOLVED"
+                        "example": "RESOLVED",
+                        "description": "Current state of the bet (RESOLVED for completed bets)"
                       },
                       "currency": {
                         "type": "string",
-                        "example": "USD"
+                        "example": "USD",
+                        "description": "Currency code used for the bet (e.g., USD)"
                       },
                       "tenant": {
                         "type": "string",
-                        "example": "kdemo"
+                        "example": "kdemo",
+                        "description": "Tenant identifier under which the bet was placed"
                       },
                       "game": {
                         "type": "string",
-                        "example": "whisker-wars"
+                        "example": "whisker-wars",
+                        "description": "Game code for which the bet belongs"
                       },
                       "id": {
                         "type": "string",
-                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX"
+                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX",
+                        "description": "Unique bet transaction identifier"
                       },
                       "round": {
                         "type": "string",
-                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX"
+                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX",
+                        "description": "Round/session identifier linking multiple bets in the same game round"
                       },
                       "createdAt": {
                         "type": "string",
-                        "example": "2025-12-29T11:57:43.760Z"
+                        "example": "2025-12-29T11:57:43.760Z",
+                        "description": "Timestamp when the bet was created"
                       },
                       "updatedAt": {
                         "type": "string",
-                        "example": "2025-12-29T11:57:43.760Z"
+                        "example": "2025-12-29T11:57:43.760Z",
+                        "description": "Timestamp when the bet was last updated"
                       },
                       "startingBalance": {
                         "type": "string",
-                        "example": "10000"
+                        "example": "10000",
+                        "description": "Player wallet balance before the bet was executed"
                       },
                       "endingBalance": {
                         "type": "string",
-                        "example": "9980"
+                        "example": "9980",
+                        "description": "Player wallet balance after the bet was resolved"
                       },
                       "spinResult": {
                         "type": "object",
@@ -1381,14 +1396,16 @@
                               "default": 0
                             }
                           }
-                        }
+                        },
+                        "description": "Detailed outcome of the spin/wager execution"
                       },
                       "betFreeSpins": {
                         "type": "array",
                         "items": {
                           "type": "object",
                           "properties": {}
-                        }
+                        },
+                        "description": "List of free spin results tied to this bet (empty when no free spins triggered)"
                       }
                     }
                   }
