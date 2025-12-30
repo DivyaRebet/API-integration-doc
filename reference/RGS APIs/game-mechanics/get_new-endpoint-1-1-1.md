@@ -1,5 +1,5 @@
 ---
-title: Copy of Authorize
+title: Game Setting
 excerpt: >-
   This endpoint validates the player and creates a new game session. It must be
   called before accessing game configuration or placing wagers.
