@@ -1041,32 +1041,6 @@
         },
         "parameters": [
           {
-            "in": "query",
-            "name": "tenant",
-            "schema": {
-              "type": "string"
-            },
-            "description": "Tenant code"
-          },
-          {
-            "in": "query",
-            "name": "token",
-            "schema": {
-              "type": "string"
-            },
-            "description": "Auth token for player",
-            "required": true
-          },
-          {
-            "in": "query",
-            "name": "currency",
-            "schema": {
-              "type": "string"
-            },
-            "description": "Currency code",
-            "required": true
-          },
-          {
             "in": "path",
             "name": "game",
             "schema": {
@@ -1094,9 +1068,13 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "tenant": {
-                    "type": "string",
-                    "description": "Tenant code"
+                  "betSize": {
+                    "type": "number",
+                    "description": "Bet size"
+                  },
+                  "betLevel": {
+                    "type": "number",
+                    "description": "Bet level"
                   },
                   "game": {
                     "type": "string",
@@ -1106,16 +1084,17 @@
                     "type": "string",
                     "description": "Player session token (secure auth token)"
                   },
-                  "currency": {
+                  "tenant": {
                     "type": "string",
-                    "description": "Currency code for balance and gameplay"
+                    "description": "Tenant code"
                   }
                 },
                 "required": [
-                  "tenant",
+                  "betSize",
+                  "betLevel",
                   "game",
                   "token",
-                  "currency"
+                  "tenant"
                 ]
               },
               "examples": {
