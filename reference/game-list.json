@@ -279,7 +279,7 @@
       }
     },
     "/client/player/authorize-game": {
-      "get": {
+      "post": {
         "summary": "Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
         "operationId": "get_{tenant}{gameId}-1",
@@ -438,27 +438,7 @@
             }
           }
         },
-        "parameters": [
-          {
-            "in": "query",
-            "name": "tenant",
-            "schema": {
-              "type": "string",
-              "default": "kdemo"
-            },
-            "required": true,
-            "description": "tenant code"
-          },
-          {
-            "in": "query",
-            "name": "gameId",
-            "schema": {
-              "type": "string"
-            },
-            "description": "game id",
-            "required": true
-          }
-        ],
+        "parameters": [],
         "x-readme": {
           "code-samples": [
             {
