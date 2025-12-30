@@ -1072,7 +1072,8 @@
             "schema": {
               "type": "string"
             },
-            "required": true
+            "required": true,
+            "description": "Game code"
           }
         ],
         "x-readme": {
