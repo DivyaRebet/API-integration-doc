@@ -765,7 +765,7 @@
         }
       }
     },
-    "/{game}/game-setting-1": {
+    "/{game}/wager": {
       "get": {
         "summary": "Copy of Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -778,121 +778,199 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "game": {
+                    "betAmount": {
                       "type": "string",
-                      "example": "pay-day",
-                      "description": "Authorized game code"
+                      "example": "10"
                     },
-                    "playerId": {
+                    "winAmount": {
                       "type": "string",
-                      "example": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
-                      "description": "Unique ID of the authenticated player"
+                      "example": "0"
                     },
-                    "tenant": {
+                    "betSize": {
+                      "type": "integer",
+                      "example": 10,
+                      "default": 0
+                    },
+                    "betLevel": {
+                      "type": "integer",
+                      "example": 1,
+                      "default": 0
+                    },
+                    "baseBet": {
+                      "type": "integer",
+                      "example": 1,
+                      "default": 0
+                    },
+                    "totalFreeSpinsWinAmount": {
                       "type": "string",
-                      "example": "kdemo",
-                      "description": "Tenant under which the game session is created"
+                      "example": "0"
                     },
-                    "currency": {
+                    "result": {
                       "type": "object",
                       "properties": {
-                        "name": {
-                          "type": "string",
-                          "example": "US Dollar"
-                        },
-                        "code": {
-                          "type": "string",
-                          "example": "USD"
-                        },
-                        "symbol": {
-                          "type": "string",
-                          "example": "$"
-                        },
-                        "type": {
-                          "type": "string",
-                          "example": "FIAT"
-                        },
-                        "isPrefix": {
-                          "type": "boolean",
-                          "example": true,
-                          "default": true
-                        },
-                        "rateToUsd": {
-                          "type": "integer",
-                          "example": 0,
-                          "default": 0
-                        }
-                      },
-                      "description": ""
-                    },
-                    "balance": {
-                      "type": "string",
-                      "example": "10000",
-                      "description": "Current player wallet balance in the selected currency"
-                    },
-                    "playerState": {
-                      "type": "object",
-                      "properties": {
-                        "freeSpins": {
+                        "totalWin": {
                           "type": "integer",
                           "example": 0,
                           "default": 0
                         },
-                        "freeSpinsWinAmount": {
-                          "type": "integer",
-                          "example": 0,
-                          "default": 0
-                        }
-                      },
-                      "description": "players last state"
-                    },
-                    "gameState": {
-                      "type": "object",
-                      "properties": {
-                        "data": {
-                          "type": "object",
-                          "properties": {
-                            "previous": {
-                              "type": "object",
-                              "properties": {
-                                "minor": {
-                                  "type": "string",
-                                  "example": "300.35"
-                                },
-                                "major": {
-                                  "type": "string",
-                                  "example": "1500.81"
-                                },
-                                "grand": {
-                                  "type": "string",
-                                  "example": "12000.36"
+                        "winLines": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "winPosition": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {}
                                 }
+                              },
+                              "winAmount": {
+                                "type": "integer",
+                                "example": 0,
+                                "default": 0
                               }
                             }
                           }
-                        },
-                        "freeSpins": {
+                        }
+                      }
+                    },
+                    "matrix": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
                           "type": "integer",
-                          "example": 0,
-                          "default": 0
-                        },
-                        "freeSpinsWinAmount": {
-                          "type": "integer",
-                          "example": 0,
+                          "example": 1,
                           "default": 0
                         }
-                      },
-                      "description": "global state of game"
+                      }
+                    },
+                    "winFreeSpins": {
+                      "type": "integer",
+                      "example": 0,
+                      "default": 0
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "NORMAL"
+                    },
+                    "isFreeSpin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isEndRound": {
+                      "type": "boolean",
+                      "example": true,
+                      "default": true
+                    },
+                    "isLastFreeSpins": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isMaxWinNormal": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isMaxCapNormal": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isMaxWinJackpot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isMaxCapJackpot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "bracket": {
+                      "type": "string",
+                      "example": "normal"
+                    },
+                    "isTriggerFirstZeroRespin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "isTriggerSecondZeroRespin": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "respinReels": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {}
+                      }
+                    },
+                    "minorPrize": {
+                      "type": "string",
+                      "example": "301.4"
+                    },
+                    "majorPrize": {
+                      "type": "string",
+                      "example": "1501.44"
+                    },
+                    "grandPrize": {
+                      "type": "string",
+                      "example": "12000.78"
+                    },
+                    "jackPotWin": {
+                      "type": "string",
+                      "example": "0"
+                    },
+                    "isTriggerJackPot": {
+                      "type": "boolean",
+                      "example": false,
+                      "default": true
+                    },
+                    "jackPotType": {},
+                    "betId": {
+                      "type": "string",
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0"
+                    },
+                    "playerId": {
+                      "type": "string",
+                      "example": "b0222334-ec12-41d6-ad47-0ea899221fa2"
+                    },
+                    "roundId": {
+                      "type": "string",
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0"
+                    },
+                    "startingBalance": {
+                      "type": "string",
+                      "example": "10000"
+                    },
+                    "endingBalance": {
+                      "type": "string",
+                      "example": "9990"
+                    },
+                    "currency": {
+                      "type": "string",
+                      "example": "USD"
+                    },
+                    "walletType": {
+                      "type": "string",
+                      "example": "CASH"
+                    },
+                    "freeSpins": {
+                      "type": "integer",
+                      "example": 0,
+                      "default": 0
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "RESOLVED"
                     }
-                  },
-                  "required": [
-                    "game",
-                    "playerId",
-                    "tenant",
-                    "currency",
-                    "balance",
-                    "playerState"
-                  ]
+                  }
                 },
                 "examples": {
                   "OK": {
