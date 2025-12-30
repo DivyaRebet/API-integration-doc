@@ -766,7 +766,7 @@
       }
     },
     "/{game}/wager": {
-      "get": {
+      "post": {
         "summary": "Copy of Copy of Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
         "operationId": "get_{game}game-setting-1",
