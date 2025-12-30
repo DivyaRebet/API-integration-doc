@@ -1,5 +1,5 @@
 ---
-title: Games Information
+title: Game Information
 excerpt: >-
   Explore detailed endpoints for game configurations, including titles,
   providers, categories, and bet options.
