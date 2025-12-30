@@ -929,41 +929,53 @@
                       "items": {
                         "type": "object",
                         "properties": {}
-                      }
+                      },
+                      "description": "Reels that participated in respin if triggered"
                     },
                     "minorPrize": {
                       "type": "string",
-                      "example": "301.4"
+                      "example": "301.4",
+                      "description": "Last recorded minor jackpot tier value"
                     },
                     "majorPrize": {
                       "type": "string",
-                      "example": "1501.44"
+                      "example": "1501.44",
+                      "description": "Last recorded major jackpot tier value"
                     },
                     "grandPrize": {
                       "type": "string",
-                      "example": "12000.78"
+                      "example": "12000.78",
+                      "description": "Last recorded grand jackpot tier value"
                     },
                     "jackPotWin": {
                       "type": "string",
-                      "example": "0"
+                      "example": "0",
+                      "description": "Amount won from jackpot in this bet"
                     },
                     "isTriggerJackPot": {
                       "type": "boolean",
                       "example": false,
-                      "default": true
+                      "default": true,
+                      "description": "True if this bet triggered a jackpot"
                     },
-                    "jackPotType": {},
+                    "jackPotType": {
+                      "type": "string",
+                      "description": "Type of jackpot triggered (e.g., MINOR, MAJOR, GRAND), null if none"
+                    },
                     "betId": {
                       "type": "string",
-                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0"
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "description": "Unique identifier for the bet transaction"
                     },
                     "playerId": {
                       "type": "string",
-                      "example": "b0222334-ec12-41d6-ad47-0ea899221fa2"
+                      "example": "b0222334-ec12-41d6-ad47-0ea899221fa2",
+                      "description": "Unique identifier of the player"
                     },
                     "roundId": {
                       "type": "string",
-                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0"
+                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
+                      "description": "Unique identifier linking all bets in the same round"
                     },
                     "startingBalance": {
                       "type": "string",
