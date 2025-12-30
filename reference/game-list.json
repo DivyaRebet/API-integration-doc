@@ -112,7 +112,8 @@
             "in": "query",
             "name": "tenant",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "kdemo"
             },
             "required": true
           }
