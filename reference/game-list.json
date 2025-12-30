@@ -1187,326 +1187,339 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "betAmount": {
-                      "type": "string",
-                      "example": "10",
-                      "description": "Amount the player wagered (string to preserve precision)"
-                    },
-                    "winAmount": {
-                      "type": "string",
-                      "example": "0",
-                      "description": "Amount won by the player from this bet"
-                    },
-                    "betSize": {
-                      "type": "integer",
-                      "example": 10,
-                      "default": 0,
-                      "description": "Numeric bet amount used by the game engine"
-                    },
-                    "betLevel": {
-                      "type": "integer",
-                      "example": 1,
-                      "default": 0,
-                      "description": "Bet multiplier level selected by player"
-                    },
-                    "baseBet": {
-                      "type": "integer",
-                      "example": 1,
-                      "default": 0,
-                      "description": "Base unit of bet before multipliers"
-                    },
-                    "totalFreeSpinsWinAmount": {
-                      "type": "string",
-                      "example": "0",
-                      "description": "Total win amount accumulated from all free spins in the session"
-                    },
-                    "result": {
-                      "type": "object",
-                      "properties": {
-                        "totalWin": {
-                          "type": "integer",
-                          "example": 0,
-                          "default": 0
-                        },
-                        "winLines": {
-                          "type": "array",
-                          "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "betAmount": {
+                        "type": "string",
+                        "example": "20"
+                      },
+                      "baseBet": {
+                        "type": "integer",
+                        "example": 2,
+                        "default": 0
+                      },
+                      "betSize": {
+                        "type": "string",
+                        "example": "10"
+                      },
+                      "betLevel": {
+                        "type": "integer",
+                        "example": 1,
+                        "default": 0
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "NORMAL"
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "RESOLVED"
+                      },
+                      "currency": {
+                        "type": "string",
+                        "example": "USD"
+                      },
+                      "tenant": {
+                        "type": "string",
+                        "example": "kdemo"
+                      },
+                      "game": {
+                        "type": "string",
+                        "example": "whisker-wars"
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX"
+                      },
+                      "round": {
+                        "type": "string",
+                        "example": "01KDMZHBEC7FDNZM7GPG33KNDX"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "example": "2025-12-29T11:57:43.760Z"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "example": "2025-12-29T11:57:43.760Z"
+                      },
+                      "startingBalance": {
+                        "type": "string",
+                        "example": "10000"
+                      },
+                      "endingBalance": {
+                        "type": "string",
+                        "example": "9980"
+                      },
+                      "spinResult": {
+                        "type": "object",
+                        "properties": {
+                          "betAmount": {
+                            "type": "integer",
+                            "example": 20,
+                            "default": 0
+                          },
+                          "winAmount": {
+                            "type": "integer",
+                            "example": 0,
+                            "default": 0
+                          },
+                          "result": {
                             "type": "object",
                             "properties": {
-                              "winPosition": {
+                              "totalWin": {
+                                "type": "integer",
+                                "example": 0,
+                                "default": 0
+                              },
+                              "winLines": {
                                 "type": "array",
                                 "items": {
                                   "type": "object",
                                   "properties": {}
                                 }
-                              },
-                              "winAmount": {
-                                "type": "integer",
-                                "example": 0,
-                                "default": 0
                               }
+                            }
+                          },
+                          "baseBet": {
+                            "type": "integer",
+                            "example": 2,
+                            "default": 0
+                          },
+                          "matrix": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer",
+                              "example": 6,
+                              "default": 0
+                            }
+                          },
+                          "matrixAfterExpansion": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer",
+                              "example": 6,
+                              "default": 0
+                            }
+                          },
+                          "wildExpandPositions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {}
+                            }
+                          },
+                          "winFreeSpins": {
+                            "type": "integer",
+                            "example": 0,
+                            "default": 0
+                          },
+                          "type": {
+                            "type": "string",
+                            "example": "NORMAL"
+                          },
+                          "isFreeSpin": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "totalFreeSpinsWinAmount": {
+                            "type": "integer",
+                            "example": 0,
+                            "default": 0
+                          },
+                          "bracket": {
+                            "type": "string",
+                            "example": "normal"
+                          },
+                          "isMaxWin": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "isMaxCap": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "isEndRound": {
+                            "type": "boolean",
+                            "example": true,
+                            "default": true
+                          },
+                          "isLastFreeSpins": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "isTriggerBonusA": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "isTriggerBonusB": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "spinType": {
+                            "type": "string",
+                            "example": "NORMAL"
+                          },
+                          "isBuyFeature": {
+                            "type": "boolean",
+                            "example": false,
+                            "default": true
+                          },
+                          "multiplierArr": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer",
+                              "example": 0,
+                              "default": 0
                             }
                           }
                         }
                       },
-                      "description": ""
-                    },
-                    "matrix": {
-                      "type": "array",
-                      "items": {
+                      "betFreeSpins": {
                         "type": "array",
                         "items": {
-                          "type": "integer",
-                          "example": 1,
-                          "default": 0
+                          "type": "object",
+                          "properties": {}
                         }
-                      },
-                      "description": "Reel outcome matrix for the spin result"
-                    },
-                    "winFreeSpins": {
-                      "type": "integer",
-                      "example": 0,
-                      "default": 0,
-                      "description": "Free spins awarded from this bet"
-                    },
-                    "type": {
-                      "type": "string",
-                      "example": "NORMAL",
-                      "description": "Bet type such as NORMAL, FREE_SPIN, etc."
-                    },
-                    "isFreeSpin": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if this spin was a free spin"
-                    },
-                    "isEndRound": {
-                      "type": "boolean",
-                      "example": true,
-                      "default": true,
-                      "description": "Marks whether the current betting round is finished"
-                    },
-                    "isLastFreeSpins": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if this was the final free spin in the sequence"
-                    },
-                    "isMaxWinNormal": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if normal win reached max allowed limit"
-                    },
-                    "isMaxCapNormal": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if normal win was capped due to limit"
-                    },
-                    "isMaxWinJackpot": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if jackpot win hit max allowed limit"
-                    },
-                    "isMaxCapJackpot": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "Indicates if jackpot win was capped"
-                    },
-                    "bracket": {
-                      "type": "string",
-                      "example": "normal",
-                      "description": "Win category/bracket for payout calculations"
-                    },
-                    "isTriggerFirstZeroRespin": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "True if first zero-win respin was triggered"
-                    },
-                    "isTriggerSecondZeroRespin": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "True if second zero-win respin was triggered"
-                    },
-                    "respinReels": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {}
-                      },
-                      "description": "Reels that participated in respin if triggered"
-                    },
-                    "minorPrize": {
-                      "type": "string",
-                      "example": "301.4",
-                      "description": "Last recorded minor jackpot tier value"
-                    },
-                    "majorPrize": {
-                      "type": "string",
-                      "example": "1501.44",
-                      "description": "Last recorded major jackpot tier value"
-                    },
-                    "grandPrize": {
-                      "type": "string",
-                      "example": "12000.78",
-                      "description": "Last recorded grand jackpot tier value"
-                    },
-                    "jackPotWin": {
-                      "type": "string",
-                      "example": "0",
-                      "description": "Amount won from jackpot in this bet"
-                    },
-                    "isTriggerJackPot": {
-                      "type": "boolean",
-                      "example": false,
-                      "default": true,
-                      "description": "True if this bet triggered a jackpot"
-                    },
-                    "jackPotType": {
-                      "type": "string",
-                      "description": "Type of jackpot triggered (e.g., MINOR, MAJOR, GRAND), null if none"
-                    },
-                    "betId": {
-                      "type": "string",
-                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
-                      "description": "Unique identifier for the bet transaction"
-                    },
-                    "playerId": {
-                      "type": "string",
-                      "example": "b0222334-ec12-41d6-ad47-0ea899221fa2",
-                      "description": "Unique identifier of the player"
-                    },
-                    "roundId": {
-                      "type": "string",
-                      "example": "01KDQCJ9D58X2ZF0YX8X25CAK0",
-                      "description": "Unique identifier linking all bets in the same round"
-                    },
-                    "startingBalance": {
-                      "type": "string",
-                      "example": "10000",
-                      "description": "Player balance before the bet was placed"
-                    },
-                    "endingBalance": {
-                      "type": "string",
-                      "example": "9990",
-                      "description": "Player balance after bet resolution"
-                    },
-                    "currency": {
-                      "type": "string",
-                      "example": "USD",
-                      "description": "Currency used for the bet (e.g., USD)"
-                    },
-                    "walletType": {
-                      "type": "string",
-                      "example": "CASH",
-                      "description": "Wallet category used for bet (CASH, BONUS, etc.)"
-                    },
-                    "freeSpins": {
-                      "type": "integer",
-                      "example": 0,
-                      "default": 0,
-                      "description": "Free spins remaining after resolving this bet"
-                    },
-                    "status": {
-                      "type": "string",
-                      "example": "RESOLVED",
-                      "description": "Bet resolution status (RESOLVED)"
+                      }
                     }
-                  },
-                  "required": [
-                    "betAmount",
-                    "winAmount",
-                    "betSize",
-                    "betLevel",
-                    "baseBet",
-                    "totalFreeSpinsWinAmount",
-                    "result",
-                    "matrix",
-                    "winFreeSpins",
-                    "type",
-                    "isFreeSpin",
-                    "isEndRound",
-                    "isLastFreeSpins",
-                    "bracket",
-                    "betId",
-                    "playerId",
-                    "roundId",
-                    "startingBalance",
-                    "endingBalance",
-                    "currency",
-                    "walletType",
-                    "freeSpins",
-                    "status"
-                  ]
+                  }
                 },
                 "examples": {
                   "OK": {
                     "summary": "OK",
-                    "value": {
-                      "betAmount": "10",
-                      "winAmount": "0",
-                      "betSize": 10,
-                      "betLevel": 1,
-                      "baseBet": 1,
-                      "totalFreeSpinsWinAmount": "0",
-                      "result": {
-                        "totalWin": 0,
-                        "winLines": [
-                          {
-                            "winPosition": [],
-                            "winAmount": 0
-                          }
-                        ]
-                      },
-                      "matrix": [
-                        [
-                          1,
-                          0,
-                          4,
-                          3,
-                          0,
-                          1,
-                          6,
-                          0,
-                          1
-                        ]
-                      ],
-                      "winFreeSpins": 0,
-                      "type": "NORMAL",
-                      "isFreeSpin": false,
-                      "isEndRound": true,
-                      "isLastFreeSpins": false,
-                      "isMaxWinNormal": false,
-                      "isMaxCapNormal": false,
-                      "isMaxWinJackpot": false,
-                      "isMaxCapJackpot": false,
-                      "bracket": "normal",
-                      "isTriggerFirstZeroRespin": false,
-                      "isTriggerSecondZeroRespin": false,
-                      "respinReels": [],
-                      "minorPrize": "301.4",
-                      "majorPrize": "1501.44",
-                      "grandPrize": "12000.78",
-                      "jackPotWin": "0",
-                      "isTriggerJackPot": false,
-                      "jackPotType": null,
-                      "betId": "01KDQCJ9D58X2ZF0YX8X25CAK0",
-                      "playerId": "b0222334-ec12-41d6-ad47-0ea899221fa2",
-                      "roundId": "01KDQCJ9D58X2ZF0YX8X25CAK0",
-                      "startingBalance": "10000",
-                      "endingBalance": "9990",
-                      "currency": "USD",
-                      "walletType": "CASH",
-                      "freeSpins": 0,
-                      "status": "RESOLVED"
-                    }
+                    "value": [
+                      {
+                        "betAmount": "20",
+                        "baseBet": 2,
+                        "betSize": "10",
+                        "betLevel": 1,
+                        "type": "NORMAL",
+                        "status": "RESOLVED",
+                        "currency": "USD",
+                        "tenant": "kdemo",
+                        "game": "whisker-wars",
+                        "id": "01KDMZHBEC7FDNZM7GPG33KNDX",
+                        "round": "01KDMZHBEC7FDNZM7GPG33KNDX",
+                        "createdAt": "2025-12-29T11:57:43.760Z",
+                        "updatedAt": "2025-12-29T11:57:43.760Z",
+                        "startingBalance": "10000",
+                        "endingBalance": "9980",
+                        "spinResult": {
+                          "betAmount": 20,
+                          "winAmount": 0,
+                          "result": {
+                            "totalWin": 0,
+                            "winLines": []
+                          },
+                          "baseBet": 2,
+                          "matrix": [
+                            6,
+                            7,
+                            2,
+                            2,
+                            7,
+                            1,
+                            1,
+                            10,
+                            8,
+                            9,
+                            9,
+                            6,
+                            7,
+                            7,
+                            9,
+                            2,
+                            3,
+                            7,
+                            2,
+                            6,
+                            2,
+                            6,
+                            7,
+                            3,
+                            2
+                          ],
+                          "matrixAfterExpansion": [
+                            6,
+                            7,
+                            2,
+                            2,
+                            7,
+                            1,
+                            1,
+                            10,
+                            8,
+                            9,
+                            9,
+                            6,
+                            7,
+                            7,
+                            9,
+                            2,
+                            3,
+                            7,
+                            2,
+                            6,
+                            2,
+                            6,
+                            7,
+                            3,
+                            2
+                          ],
+                          "wildExpandPositions": [],
+                          "winFreeSpins": 0,
+                          "type": "NORMAL",
+                          "isFreeSpin": false,
+                          "totalFreeSpinsWinAmount": 0,
+                          "bracket": "normal",
+                          "isMaxWin": false,
+                          "isMaxCap": false,
+                          "isEndRound": true,
+                          "isLastFreeSpins": false,
+                          "isTriggerBonusA": false,
+                          "isTriggerBonusB": false,
+                          "spinType": "NORMAL",
+                          "isBuyFeature": false,
+                          "multiplierArr": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                          ]
+                        },
+                        "betFreeSpins": []
+                      }
+                    ]
                   }
                 }
               }
@@ -1527,7 +1540,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-rgs.kerma.games/pay-day/wager' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y; AWSALBCORS=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y' \\\n--data '{\n    \"betSize\": 10,\n    \"betLevel\": 1,\n    \"game\": \"pay-day\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\",\n    \"tenant\": \"kdemo\"   \n}'",
+              "code": "curl --location 'https://dev-rgs.kerma.games/bets?startDate=2025-12-01T12%3A31%3A03.282Z&endDate=2025-12-31T12%3A31%3A03.282Z&tenant=kdemo&game=pay-day&token=01KDQCH84P3G37FSD4JWT51MD7&take=10&skip=0' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=tvC3KUG0X7W6JIl3u5OJZqkiPM7YkTILrPd10oYkfl63iDB0HwWhQyv9PzNGbMPsUIYgY5+Cx2kkLEFAa3dNpMnIIJoBxdgEsPwmnG9u0nRircCyJZ9VSIvvWzrx; AWSALBCORS=tvC3KUG0X7W6JIl3u5OJZqkiPM7YkTILrPd10oYkfl63iDB0HwWhQyv9PzNGbMPsUIYgY5+Cx2kkLEFAa3dNpMnIIJoBxdgEsPwmnG9u0nRircCyJZ9VSIvvWzrx; AWSALBTG=eZjn+U/p5ZKdb3egdvLQ+8cdZB3YTo37c4A0NCKkzSlrduEYrXLx2GR3YzJiGmxoVrhK9rt0fdHGK4yaA6/0ItLqL0LlnoDK8YqrsIA1XfaeMSa/Zbuv3xOjpX9OGdsM2P0snTUq4jBQ76E35RkEzf6lrvaIduQcs6WCky04dOm3; AWSALBTGCORS=eZjn+U/p5ZKdb3egdvLQ+8cdZB3YTo37c4A0NCKkzSlrduEYrXLx2GR3YzJiGmxoVrhK9rt0fdHGK4yaA6/0ItLqL0LlnoDK8YqrsIA1XfaeMSa/Zbuv3xOjpX9OGdsM2P0snTUq4jBQ76E35RkEzf6lrvaIduQcs6WCky04dOm3; AWSALB=mbDx6sAnkNt8vmLZA+LJQleVku40EKnXEn4c5h9wrJuLj39nb02zoXRhkf93ywpjDtZ/pawuJWHaR0c/uv0FbU0GHrng4yihrx3621lHhMEWHJOBEKhvKV7rRmQY; AWSALBCORS=mbDx6sAnkNt8vmLZA+LJQleVku40EKnXEn4c5h9wrJuLj39nb02zoXRhkf93ywpjDtZ/pawuJWHaR0c/uv0FbU0GHrng4yihrx3621lHhMEWHJOBEKhvKV7rRmQY; AWSALBTG=xPwwVCQ5GjUr1YXj1ovbRWQA4Xrjx0PJK56xrElateDmNlkkPBkjXc8FRXOd3YRGilpQTzKtApRpVyb2/0Rgl+aMfwW2bHfQlzmX0jKXOnj3j50KATPg5aPBd7kNGjTc12oyPcjracblHcEgkOBkljSH/k+Vu5xQd3J1bBCjRFe9; AWSALBTGCORS=xPwwVCQ5GjUr1YXj1ovbRWQA4Xrjx0PJK56xrElateDmNlkkPBkjXc8FRXOd3YRGilpQTzKtApRpVyb2/0Rgl+aMfwW2bHfQlzmX0jKXOnj3j50KATPg5aPBd7kNGjTc12oyPcjracblHcEgkOBkljSH/k+Vu5xQd3J1bBCjRFe9'",
               "language": "shell",
               "name": ""
             }
