@@ -1,8 +1,5 @@
 ---
-title: New Endpoint
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
-api:
-  file: gamelist.json
-  operationId: get_new-endpoint
-hidden: false
+title: Game List
+excerpt: You can use this API endpoint to automatically get a list of games.
+hidden: true
 ---
