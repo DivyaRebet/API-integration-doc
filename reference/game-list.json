@@ -63,6 +63,22 @@
                           "rtp": {
                             "type": "string",
                             "description": "Return to Player percentage"
+                          },
+                          "maxWin": {
+                            "type": "string",
+                            "description": "Maximum win amount"
+                          },
+                          "baseBet": {
+                            "type": "string",
+                            "description": "Base bet value"
+                          },
+                          "createdAt": {
+                            "type": "string",
+                            "description": "Creation timestamp"
+                          },
+                          "updatedAt": {
+                            "type": "string",
+                            "description": "Last update timestamp"
                           }
                         },
                         "type": "object",
@@ -73,7 +89,11 @@
                           "status",
                           "url",
                           "type",
-                          "rtp"
+                          "rtp",
+                          "baseBet",
+                          "maxWin",
+                          "createdAt",
+                          "updatedAt"
                         ]
                       },
                       "description": "List of games for the tenant"
