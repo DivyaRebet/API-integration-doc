@@ -170,6 +170,38 @@
                     "status": {
                       "type": "number",
                       "description": "Game status"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "Public game URL"
+                    },
+                    "logicUrl": {
+                      "type": "string",
+                      "description": "Game logic service URL"
+                    },
+                    "type": {
+                      "type": "number",
+                      "description": "Game type"
+                    },
+                    "rtp": {
+                      "type": "string",
+                      "description": "Return to Player percentage"
+                    },
+                    "maxWin": {
+                      "type": "string",
+                      "description": "Maximum win amount"
+                    },
+                    "baseBet": {
+                      "type": "string",
+                      "description": "Base bet value"
+                    },
+                    "createdAt": {
+                      "type": "string",
+                      "description": "Creation timestamp"
+                    },
+                    "updatedAt": {
+                      "type": "string",
+                      "description": "Last update timestamp"
                     }
                   },
                   "required": [
@@ -177,7 +209,14 @@
                     "name",
                     "description",
                     "code",
-                    "status"
+                    "status",
+                    "type",
+                    "rtp",
+                    "maxWin",
+                    "baseBet",
+                    "createdAt",
+                    "updatedAt",
+                    "url"
                   ]
                 }
               }
