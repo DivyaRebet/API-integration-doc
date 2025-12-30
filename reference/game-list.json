@@ -1531,50 +1531,59 @@
             "in": "query",
             "name": "startDate",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "endDate",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "format": "date-time"
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "tenant",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "game",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "token",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "take",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           },
           {
             "in": "query",
             "name": "skip",
             "schema": {
               "type": "string"
-            }
+            },
+            "required": true
           }
         ],
         "x-readme": {
