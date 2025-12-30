@@ -277,6 +277,146 @@
           ]
         }
       }
+    },
+    "/{tenant}/{gameId}-1": {
+      "get": {
+        "summary": "Copy of Copy of New Endpoint",
+        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "operationId": "get_{tenant}{gameId}-1",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "Unique game identifier"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Game name"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Game description"
+                    },
+                    "code": {
+                      "type": "string",
+                      "description": "Game code"
+                    },
+                    "status": {
+                      "type": "number",
+                      "description": "Game status"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "Public game URL"
+                    },
+                    "logicUrl": {
+                      "type": "string",
+                      "description": "Game logic service URL"
+                    },
+                    "type": {
+                      "type": "number",
+                      "description": "Game type"
+                    },
+                    "rtp": {
+                      "type": "string",
+                      "description": "Return to Player percentage"
+                    },
+                    "maxWin": {
+                      "type": "string",
+                      "description": "Maximum win amount"
+                    },
+                    "baseBet": {
+                      "type": "string",
+                      "description": "Base bet value"
+                    },
+                    "createdAt": {
+                      "type": "string",
+                      "description": "Creation timestamp"
+                    },
+                    "updatedAt": {
+                      "type": "string",
+                      "description": "Last update timestamp"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "description",
+                    "code",
+                    "status",
+                    "type",
+                    "rtp",
+                    "maxWin",
+                    "baseBet",
+                    "createdAt",
+                    "updatedAt",
+                    "url"
+                  ]
+                },
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "id": "019b6913-e803-7051-9ba8-ca0f0e494898",
+                      "name": "Whisker Wars",
+                      "description": "Whiskers Wars",
+                      "code": "whisker-wars",
+                      "status": 0,
+                      "url": "https://example.com/super-fun-game",
+                      "logicUrl": "http://dev-logic-whisker-wars:5000",
+                      "type": 0,
+                      "rtp": "96.5",
+                      "maxWin": "100000",
+                      "baseBet": "1",
+                      "createdAt": "Mon Dec 29 2025 07:47:50 GMT+0000 (Coordinated Universal Time)",
+                      "updatedAt": "Mon Dec 29 2025 07:47:50 GMT+0000 (Coordinated Universal Time)"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "tenant",
+            "schema": {
+              "type": "string",
+              "default": "kdemo"
+            },
+            "required": true,
+            "description": "tenant code"
+          },
+          {
+            "in": "query",
+            "name": "gameId",
+            "schema": {
+              "type": "string"
+            },
+            "description": "game id",
+            "required": true
+          }
+        ],
+        "x-readme": {
+          "code-samples": [
+            {
+              "code": "curl --location 'https://dev-rgs.kerma.games/kdemo/019b6913-e803-7051-9ba8-ca0f0e494898'",
+              "language": "shell",
+              "name": ""
+            }
+          ],
+          "samples-languages": [
+            "shell"
+          ]
+        }
+      }
     }
   },
   "components": {
