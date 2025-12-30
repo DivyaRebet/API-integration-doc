@@ -291,72 +291,113 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
+                    "game": {
                       "type": "string",
-                      "description": "Unique game identifier"
+                      "example": "pay-day"
                     },
-                    "name": {
+                    "playerId": {
                       "type": "string",
-                      "description": "Game name"
+                      "example": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5"
                     },
-                    "description": {
+                    "tenant": {
                       "type": "string",
-                      "description": "Game description"
+                      "example": "kdemo"
                     },
-                    "code": {
+                    "currency": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "US Dollar"
+                        },
+                        "code": {
+                          "type": "string",
+                          "example": "USD"
+                        },
+                        "symbol": {
+                          "type": "string",
+                          "example": "$"
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "FIAT"
+                        },
+                        "isPrefix": {
+                          "type": "boolean",
+                          "example": true,
+                          "default": true
+                        },
+                        "rateToUsd": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      }
+                    },
+                    "balance": {
                       "type": "string",
-                      "description": "Game code"
+                      "example": "10000"
                     },
-                    "status": {
-                      "type": "number",
-                      "description": "Game status"
+                    "playerState": {
+                      "type": "object",
+                      "properties": {
+                        "freeSpins": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        },
+                        "freeSpinsWinAmount": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      }
                     },
-                    "url": {
-                      "type": "string",
-                      "description": "Public game URL"
-                    },
-                    "logicUrl": {
-                      "type": "string",
-                      "description": "Game logic service URL"
-                    },
-                    "type": {
-                      "type": "number",
-                      "description": "Game type"
-                    },
-                    "rtp": {
-                      "type": "string",
-                      "description": "Return to Player percentage"
-                    },
-                    "maxWin": {
-                      "type": "string",
-                      "description": "Maximum win amount"
-                    },
-                    "baseBet": {
-                      "type": "string",
-                      "description": "Base bet value"
-                    },
-                    "createdAt": {
-                      "type": "string",
-                      "description": "Creation timestamp"
-                    },
-                    "updatedAt": {
-                      "type": "string",
-                      "description": "Last update timestamp"
+                    "gameState": {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "previous": {
+                              "type": "object",
+                              "properties": {
+                                "minor": {
+                                  "type": "string",
+                                  "example": "300.35"
+                                },
+                                "major": {
+                                  "type": "string",
+                                  "example": "1500.81"
+                                },
+                                "grand": {
+                                  "type": "string",
+                                  "example": "12000.36"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "freeSpins": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        },
+                        "freeSpinsWinAmount": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      }
                     }
                   },
                   "required": [
-                    "id",
-                    "name",
-                    "description",
-                    "code",
-                    "status",
-                    "type",
-                    "rtp",
-                    "maxWin",
-                    "baseBet",
-                    "createdAt",
-                    "updatedAt",
-                    "url"
+                    "game",
+                    "playerId",
+                    "tenant",
+                    "currency",
+                    "balance",
+                    "playerState"
                   ]
                 },
                 "examples": {
