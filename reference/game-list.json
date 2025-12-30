@@ -278,7 +278,7 @@
         }
       }
     },
-    "/{tenant}/{gameId}-1": {
+    "/client/player/authorize-game": {
       "get": {
         "summary": "Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -407,7 +407,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-rgs.kerma.games/kdemo/019b6913-e803-7051-9ba8-ca0f0e494898'",
+              "code": "curl --location 'https://dev-rgs.kerma.games/client/player/authorize-game' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q; AWSALBCORS=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q' \\\n--data '{\n    \"tenant\": \"kdemo\",\n    \"game\": \"pay-day\",\n    \"language\": \"en\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\"\n}'",
               "language": "shell",
               "name": ""
             }
