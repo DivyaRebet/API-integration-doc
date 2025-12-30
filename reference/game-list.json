@@ -102,6 +102,12 @@
                   "required": [
                     "games"
                   ]
+                },
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": "{\n  \"games\": [\n    {\n      \"id\": \"019b6913-e803-7051-9ba8-ccc0904dae5d\",\n      \"name\": \"Pay Day\",\n      \"description\": \"Pay Day\",\n      \"code\": \"pay-day\",\n      \"status\": 0,\n      \"url\": \"https://example.com/super-fun-game\",\n      \"logicUrl\": \"http://dev-logic-pay-day:5000\",\n      \"type\": 0,\n      \"rtp\": \"96.5\",\n      \"maxWin\": \"100000\",\n      \"baseBet\": \"1\",\n      \"createdAt\": \"2025-12-29T07:47:50.916Z\",\n      \"updatedAt\": \"2025-12-29T07:47:50.916Z\"\n    },\n    {\n      \"id\": \"019b6913-e803-7051-9ba8-ca0f0e494898\",\n      \"name\": \"Whisker Wars\",\n      \"description\": \"Whiskers Wars\",\n      \"code\": \"whisker-wars\",\n      \"status\": 0,\n      \"url\": \"https://example.com/super-fun-game\",\n      \"logicUrl\": \"http://dev-logic-whisker-wars:5000\",\n      \"type\": 0,\n      \"rtp\": \"96.5\",\n      \"maxWin\": \"100000\",\n      \"baseBet\": \"1\",\n      \"createdAt\": \"2025-12-29T07:47:50.916Z\",\n      \"updatedAt\": \"2025-12-29T07:47:50.916Z\"\n    }\n  "
+                  }
                 }
               }
             }
