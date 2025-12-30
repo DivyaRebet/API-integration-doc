@@ -151,90 +151,34 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "games": {
-                      "type": "array",
-                      "items": {
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "description": "Unique game identifier"
-                          },
-                          "name": {
-                            "type": "string",
-                            "description": "Game name"
-                          },
-                          "description": {
-                            "type": "string",
-                            "description": "Game description"
-                          },
-                          "code": {
-                            "type": "string",
-                            "description": "URL-friendly game code"
-                          },
-                          "status": {
-                            "type": "number",
-                            "description": "Game status"
-                          },
-                          "url": {
-                            "type": "string",
-                            "description": "Public game URL"
-                          },
-                          "logicUrl": {
-                            "type": "string",
-                            "description": "Game logic service URL"
-                          },
-                          "type": {
-                            "type": "number",
-                            "description": "Game type"
-                          },
-                          "rtp": {
-                            "type": "string",
-                            "description": "Return to Player percentage"
-                          },
-                          "maxWin": {
-                            "type": "string",
-                            "description": "Maximum win amount"
-                          },
-                          "baseBet": {
-                            "type": "string",
-                            "description": "Base bet value"
-                          },
-                          "createdAt": {
-                            "type": "string",
-                            "description": "Creation timestamp"
-                          },
-                          "updatedAt": {
-                            "type": "string",
-                            "description": "Last update timestamp"
-                          }
-                        },
-                        "type": "object",
-                        "required": [
-                          "id",
-                          "name",
-                          "code",
-                          "status",
-                          "url",
-                          "type",
-                          "rtp",
-                          "baseBet",
-                          "maxWin",
-                          "createdAt",
-                          "updatedAt"
-                        ]
-                      },
-                      "description": "List of games for the tenant"
+                    "id": {
+                      "type": "string",
+                      "description": "Unique game identifier"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Game name"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Game description"
+                    },
+                    "code": {
+                      "type": "string",
+                      "description": "Game code"
+                    },
+                    "status": {
+                      "type": "number",
+                      "description": "Game status"
                     }
                   },
                   "required": [
-                    "games"
+                    "id",
+                    "name",
+                    "description",
+                    "code",
+                    "status"
                   ]
-                },
-                "examples": {
-                  "OK": {
-                    "summary": "OK",
-                    "value": "{\n  \"games\": [\n    {\n      \"id\": \"019b6913-e803-7051-9ba8-ccc0904dae5d\",\n      \"name\": \"Pay Day\",\n      \"description\": \"Pay Day\",\n      \"code\": \"pay-day\",\n      \"status\": 0,\n      \"url\": \"https://example.com/super-fun-game\",\n      \"logicUrl\": \"http://dev-logic-pay-day:5000\",\n      \"type\": 0,\n      \"rtp\": \"96.5\",\n      \"maxWin\": \"100000\",\n      \"baseBet\": \"1\",\n      \"createdAt\": \"2025-12-29T07:47:50.916Z\",\n      \"updatedAt\": \"2025-12-29T07:47:50.916Z\"\n    },\n    {\n      \"id\": \"019b6913-e803-7051-9ba8-ca0f0e494898\",\n      \"name\": \"Whisker Wars\",\n      \"description\": \"Whiskers Wars\",\n      \"code\": \"whisker-wars\",\n      \"status\": 0,\n      \"url\": \"https://example.com/super-fun-game\",\n      \"logicUrl\": \"http://dev-logic-whisker-wars:5000\",\n      \"type\": 0,\n      \"rtp\": \"96.5\",\n      \"maxWin\": \"100000\",\n      \"baseBet\": \"1\",\n      \"createdAt\": \"2025-12-29T07:47:50.916Z\",\n      \"updatedAt\": \"2025-12-29T07:47:50.916Z\"\n    }\n  "
-                  }
                 }
               }
             }
