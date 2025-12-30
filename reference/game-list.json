@@ -971,7 +971,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-rgs.kerma.games/client/player/authorize-game' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q; AWSALBCORS=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q' \\\n--data '{\n    \"tenant\": \"kdemo\",\n    \"game\": \"pay-day\",\n    \"language\": \"en\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\"\n}'",
+              "code": "curl --location 'https://dev-rgs.kerma.games/pay-day/wager' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y; AWSALBCORS=WYVCh/cn0uo4+XjiCsElrvPg4poPLwkwvNxk2lWI11z3EyIYNVY4PukkBBkpXEWmfyCgEQIFtfgl14GK8Hrp2yLuW3KisUVIg/qlw7avgtJ+X0fEWS8JmiQmz86y' \\\n--data '{\n    \"betSize\": 10,\n    \"betLevel\": 1,\n    \"game\": \"pay-day\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\",\n    \"tenant\": \"kdemo\"   \n}'",
               "language": "shell",
               "name": ""
             }
