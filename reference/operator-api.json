@@ -168,13 +168,52 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "token": {
+                  "player": {
                     "type": "string",
                     "description": "Unique account identifier"
+                  },
+                  "token": {
+                    "type": "string"
+                  },
+                  "gameId": {
+                    "type": "string"
+                  },
+                  "gameCode": {
+                    "type": "string"
+                  },
+                  "betId": {
+                    "type": "string"
+                  },
+                  "betAmount": {
+                    "type": "string"
+                  },
+                  "winAmount": {
+                    "type": "string"
+                  },
+                  "isEndRound": {
+                    "type": "string"
+                  },
+                  "betType": {
+                    "type": "string"
+                  },
+                  "currency": {
+                    "type": "string"
+                  },
+                  "transactionId": {
+                    "type": "string"
+                  },
+                  "created": {
+                    "type": "string"
+                  },
+                  "updated": {
+                    "type": "string"
+                  },
+                  "walletType": {
+                    "type": "string"
                   }
                 },
                 "required": [
-                  "token"
+                  "player"
                 ]
               },
               "examples": {
