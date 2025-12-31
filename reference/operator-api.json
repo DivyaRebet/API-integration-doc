@@ -18,7 +18,53 @@
         "operationId": "get_new-endpoint",
         "responses": {
           "200": {
-            "description": "Successful response"
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "id": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "token": "cmiyr3ti8000201kh6i8oadwq",
+                      "currency": "BRL",
+                      "balance": "100",
+                      "language": "en",
+                      "nickName": "rajat"
+                    }
+                  }
+                },
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "id_cmiyr3ti8000201kh6i8oadwq"
+                    },
+                    "token": {
+                      "type": "string",
+                      "example": "cmiyr3ti8000201kh6i8oadwq"
+                    },
+                    "currency": {
+                      "type": "string",
+                      "example": "BRL"
+                    },
+                    "balance": {
+                      "type": "string",
+                      "example": "100"
+                    },
+                    "language": {
+                      "type": "string",
+                      "example": "en"
+                    },
+                    "nickName": {
+                      "type": "string",
+                      "example": "rajat"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "requestBody": {
@@ -34,6 +80,14 @@
                 "required": [
                   "token"
                 ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "token": "cmiyr3ti8000201kh6i8oadwq"
+                  }
+                }
               }
             }
           }
