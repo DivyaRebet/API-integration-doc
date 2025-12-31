@@ -1,8 +1,8 @@
 ---
 title: Wager
 excerpt: >-
-  This endpoint validates the player and creates a new game session. It must be
-  called before accessing game configuration or placing wagers.
+  This endpoint processes a wager and executes a game spin for the specified
+  game.  
 api:
   file: game-list.json
   operationId: get_{game}game-setting-1
