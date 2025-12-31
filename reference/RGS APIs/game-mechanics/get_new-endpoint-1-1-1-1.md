@@ -1,8 +1,9 @@
 ---
 title: Wager
 excerpt: >-
-  This endpoint processes a wager and executes a game spin for the specified
-  game.  
+  This endpoint is used during gameplay to place a wager and perform a game
+  spin. It returns the result of the spin along with updated game and balance
+  information.
 api:
   file: game-list.json
   operationId: get_{game}game-setting-1
