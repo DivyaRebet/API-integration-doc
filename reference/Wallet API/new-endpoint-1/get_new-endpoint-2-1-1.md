@@ -1,6 +1,6 @@
 ---
 title: Get Balance
-excerpt: This api is used to get players wallet balance.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: operator-api.json
   operationId: post_apiv1transactions-1

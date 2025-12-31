@@ -1,6 +1,6 @@
 ---
 title: Aunthenticate
-excerpt: This endpoint validates player via token.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: operator-api.json
   operationId: get_new-endpoint
