@@ -1,7 +1,7 @@
 ---
 title: Get Game
 excerpt: >-
-  This endpoint returns detailed information for a specific slot game using the
+  This endpoint returns detailed information for a specific game using the
   tenant and game ID.
 api:
   file: game-list.json
