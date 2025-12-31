@@ -1,5 +1,5 @@
 ---
-title: Copy of Authenticate
+title: Transaction
 deprecated: false
 hidden: false
 metadata:
