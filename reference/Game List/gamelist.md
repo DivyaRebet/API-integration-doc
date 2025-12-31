@@ -1,4 +1,0 @@
----
-title: /gamelist
-hidden: false
----
