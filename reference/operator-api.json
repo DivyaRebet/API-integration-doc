@@ -136,11 +136,8 @@
                     "summary": "OK",
                     "value": {
                       "id": "id_cmiyr3ti8000201kh6i8oadwq",
-                      "token": "cmiyr3ti8000201kh6i8oadwq",
-                      "currency": "BRL",
-                      "balance": "100",
-                      "language": "en",
-                      "nickName": "rajat"
+                      "balance": "102",
+                      "currency": "BRL"
                     }
                   }
                 },
