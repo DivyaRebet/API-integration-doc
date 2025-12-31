@@ -120,6 +120,116 @@
           ]
         }
       }
+    },
+    "/api/v1/authenticate-1": {
+      "post": {
+        "summary": "Copy of New Endpoint",
+        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "operationId": "post_apiv1authenticate-1",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "id": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "token": "cmiyr3ti8000201kh6i8oadwq",
+                      "currency": "BRL",
+                      "balance": "100",
+                      "language": "en",
+                      "nickName": "rajat"
+                    }
+                  }
+                },
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "description": "Player ID"
+                    },
+                    "token": {
+                      "type": "string",
+                      "example": "cmiyr3ti8000201kh6i8oadwq",
+                      "description": "Player session token"
+                    },
+                    "currency": {
+                      "type": "string",
+                      "example": "BRL",
+                      "description": "Game currency"
+                    },
+                    "balance": {
+                      "type": "string",
+                      "example": "100",
+                      "description": "Player balance"
+                    },
+                    "language": {
+                      "type": "string",
+                      "example": "en",
+                      "description": "Language code"
+                    },
+                    "nickName": {
+                      "type": "string",
+                      "example": "rajat",
+                      "description": "Player nickname"
+                    }
+                  },
+                  "required": [
+                    "nickName",
+                    "language",
+                    "balance",
+                    "currency",
+                    "token",
+                    "id"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "description": "Unique account identifier"
+                  }
+                },
+                "required": [
+                  "token"
+                ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "token": "cmiyr3ti8000201kh6i8oadwq"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-readme": {
+          "code-samples": [
+            {
+              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/authenticate' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"token\": \"cmiyr3ti8000201kh6i8oadwq\"\n}'",
+              "language": "shell",
+              "name": ""
+            }
+          ],
+          "samples-languages": [
+            "shell"
+          ]
+        }
+      }
     }
   },
   "components": {
