@@ -9,6 +9,6 @@ hidden: true
 metadata:
   robots: index
 ---
-<Image border={false} src="https://files.readme.io/123f8a08be7965791bddda15d51d2fae02bd7eb33f6a5542ca1cfa1ce8e5922a-image.png" />
+<Image align="center" border={true} width="700px" src="https://files.readme.io/9581e4b9408e432f1c0c45d030ec880f7be29a0996e96d024d17c29f5e09aeac-image.png" className="border" />
 
 <br />
