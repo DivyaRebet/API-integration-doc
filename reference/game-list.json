@@ -1645,6 +1645,232 @@
           }
         }
       }
+    },
+    "/client/player/authorize-game-1": {
+      "post": {
+        "summary": "Copy of Copy of Copy of New Endpoint",
+        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "operationId": "post_clientplayerauthorize-game-1",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "game": {
+                      "type": "string",
+                      "example": "pay-day",
+                      "description": "Authorized game code"
+                    },
+                    "playerId": {
+                      "type": "string",
+                      "example": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
+                      "description": "Unique ID of the authenticated player"
+                    },
+                    "tenant": {
+                      "type": "string",
+                      "example": "kdemo",
+                      "description": "Tenant under which the game session is created"
+                    },
+                    "currency": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "example": "US Dollar"
+                        },
+                        "code": {
+                          "type": "string",
+                          "example": "USD"
+                        },
+                        "symbol": {
+                          "type": "string",
+                          "example": "$"
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "FIAT"
+                        },
+                        "isPrefix": {
+                          "type": "boolean",
+                          "example": true,
+                          "default": true
+                        },
+                        "rateToUsd": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      },
+                      "description": ""
+                    },
+                    "balance": {
+                      "type": "string",
+                      "example": "10000",
+                      "description": "Current player wallet balance in the selected currency"
+                    },
+                    "playerState": {
+                      "type": "object",
+                      "properties": {
+                        "freeSpins": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        },
+                        "freeSpinsWinAmount": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      },
+                      "description": "players last state"
+                    },
+                    "gameState": {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "object",
+                          "properties": {
+                            "previous": {
+                              "type": "object",
+                              "properties": {
+                                "minor": {
+                                  "type": "string",
+                                  "example": "300.35"
+                                },
+                                "major": {
+                                  "type": "string",
+                                  "example": "1500.81"
+                                },
+                                "grand": {
+                                  "type": "string",
+                                  "example": "12000.36"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "freeSpins": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        },
+                        "freeSpinsWinAmount": {
+                          "type": "integer",
+                          "example": 0,
+                          "default": 0
+                        }
+                      },
+                      "description": "global state of game"
+                    }
+                  },
+                  "required": [
+                    "game",
+                    "playerId",
+                    "tenant",
+                    "currency",
+                    "balance",
+                    "playerState"
+                  ]
+                },
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "game": "pay-day",
+                      "playerId": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
+                      "tenant": "kdemo",
+                      "currency": {
+                        "name": "US Dollar",
+                        "code": "USD",
+                        "symbol": "$",
+                        "type": "FIAT",
+                        "isPrefix": true,
+                        "rateToUsd": 0
+                      },
+                      "balance": "10000",
+                      "playerState": {
+                        "freeSpins": 0,
+                        "freeSpinsWinAmount": 0
+                      },
+                      "gameState": {
+                        "data": {
+                          "previous": {
+                            "minor": "300.35",
+                            "major": "1500.81",
+                            "grand": "12000.36"
+                          }
+                        },
+                        "freeSpins": 0,
+                        "freeSpinsWinAmount": 0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [],
+        "x-readme": {
+          "code-samples": [
+            {
+              "code": "curl --location 'https://dev-rgs.kerma.games/client/player/authorize-game' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q; AWSALBCORS=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q' \\\n--data '{\n    \"tenant\": \"kdemo\",\n    \"game\": \"pay-day\",\n    \"language\": \"en\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\"\n}'",
+              "language": "shell",
+              "name": ""
+            }
+          ],
+          "samples-languages": [
+            "shell"
+          ]
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tenant": {
+                    "type": "string",
+                    "description": "Tenant code"
+                  },
+                  "game": {
+                    "type": "string",
+                    "description": "Game code"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "Player session token (secure auth token)"
+                  },
+                  "currency": {
+                    "type": "string",
+                    "description": "Currency code for balance and gameplay"
+                  }
+                },
+                "required": [
+                  "tenant",
+                  "game",
+                  "token",
+                  "currency"
+                ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "tenant": "kdemo",
+                    "game": "pay-day",
+                    "token": "01DK0037EXSEYBVY9HKTE32F1PF",
+                    "currency": "USD"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
