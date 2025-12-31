@@ -146,17 +146,25 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "example": "id_cmiyr3ti8000201kh6i8oadwq"
+                      "example": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "description": "Transaction reference ID"
                     },
                     "balance": {
                       "type": "string",
-                      "example": "102"
+                      "example": "102",
+                      "description": "Wallet Balance"
                     },
                     "currency": {
                       "type": "string",
-                      "example": "BRL"
+                      "example": "BRL",
+                      "description": "Currency code"
                     }
-                  }
+                  },
+                  "required": [
+                    "id",
+                    "balance",
+                    "currency"
+                  ]
                 }
               }
             }
