@@ -11,7 +11,7 @@
   ],
   "tags": [],
   "paths": {
-    "/new-endpoint": {
+    "/api/v1/authenticate": {
       "get": {
         "summary": "New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
