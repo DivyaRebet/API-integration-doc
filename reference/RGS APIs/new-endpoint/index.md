@@ -3,7 +3,7 @@ title: Game Information
 excerpt: >-
   The Game Information section provides endpoints for retrieving metadata and
   configuration details of games available to the client.
-hidden: false
+hidden: true
 link:
   new_tab: false
 ---
