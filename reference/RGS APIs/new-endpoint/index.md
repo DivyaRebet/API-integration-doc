@@ -13,10 +13,7 @@ These APIs allow clients to discover which games are active, access essential ga
 
 This data is typically used to:
 
-Display the available games in a lobby or game catalog
-
-Validate game availability and status
-
-Configure game launches and betting parameters
-
-Synchronize game metadata with client systems
+1. Display the available games in a lobby or game catalog
+2. Validate game availability and status
+3. Configure game launches and betting parameters
+4. Synchronize game metadata with client systems
