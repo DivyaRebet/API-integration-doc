@@ -1831,7 +1831,8 @@
             "in": "path",
             "name": "gameId",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "default": "019b6913-e803-7051-9ba8-ca0f0e494898"
             },
             "required": true,
             "description": "Game identifier"
