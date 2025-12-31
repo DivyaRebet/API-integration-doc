@@ -1,5 +1,5 @@
 ---
-title: Copy of Transaction
+title: Balance
 deprecated: false
 hidden: false
 metadata:
