@@ -1,6 +1,6 @@
 ---
 title: Get Balance
-excerpt: This endpoint validates player via token.
+excerpt: This api is used to get players wallet balance.
 api:
   file: operator-api.json
   operationId: post_apiv1transactions-1
