@@ -121,7 +121,7 @@
         }
       }
     },
-    "/api/v1/authenticate-1": {
+    "/api/v1/transactions": {
       "post": {
         "summary": "Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
