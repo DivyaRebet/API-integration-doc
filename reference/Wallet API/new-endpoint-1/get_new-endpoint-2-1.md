@@ -1,5 +1,5 @@
 ---
-title: Copy of Aunthenticate
+title: Transaction
 excerpt: This endpoint validates player via token.
 api:
   file: operator-api.json
