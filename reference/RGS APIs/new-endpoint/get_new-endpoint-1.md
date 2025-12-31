@@ -1,8 +1,6 @@
 ---
 title: Get Game
-excerpt: >-
-  This endpoint returns detailed information for a specific game using the
-  tenant and game ID.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: game-list.json
   operationId: get_gamelist-1

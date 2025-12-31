@@ -1,8 +1,6 @@
 ---
 title: History
-excerpt: >-
-  Fetches resolved bet history for a player in a specific game and tenant within
-  a given date range. Supports pagination using take and skip.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: game-list.json
   operationId: post_{game}wager-1

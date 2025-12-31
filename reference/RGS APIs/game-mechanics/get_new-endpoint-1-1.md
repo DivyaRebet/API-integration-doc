@@ -1,8 +1,6 @@
 ---
 title: Authorize
-excerpt: >-
-  This endpoint validates the player and creates a new game session. It must be
-  called before accessing game configuration or placing wagers.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: game-list.json
   operationId: get_{tenant}{gameId}-1

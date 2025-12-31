@@ -1,8 +1,6 @@
 ---
 title: Game Setting
-excerpt: >-
-  This endpoint returns the initial configuration settings for the specified
-  game.  
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: game-list.json
   operationId: post_clientplayerauthorize-game-1
