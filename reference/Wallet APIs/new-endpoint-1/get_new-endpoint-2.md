@@ -1,5 +1,5 @@
 ---
-title: Aunthenticate
+title: Authenticate
 excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: operator-api.json
