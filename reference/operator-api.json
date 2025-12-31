@@ -374,7 +374,7 @@
     "securitySchemes": {}
   },
   "x-readme": {
-    "explorer-enabled": true,
+    "explorer-enabled": false,
     "proxy-enabled": true
   }
 }

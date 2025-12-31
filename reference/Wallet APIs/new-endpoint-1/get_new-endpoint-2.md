@@ -1,9 +1,6 @@
 ---
 title: Authenticate
-excerpt: >-
-  Authenticates a player on the tenant side using a session token. Returns the
-  player’s session token, account details, and balance for subsequent API
-  requests.
+excerpt: This is your first endpoint! Edit this page to start documenting your API.
 api:
   file: operator-api.json
   operationId: get_new-endpoint
