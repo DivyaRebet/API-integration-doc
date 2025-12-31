@@ -1,5 +1,5 @@
 ---
-title: Copy of Game Mechanics
+title: Operator APIs
 excerpt: >-
   Explore the core gameplay flow, including player authorization, game
   initialization, wagering actions, and retrieval of game history.
