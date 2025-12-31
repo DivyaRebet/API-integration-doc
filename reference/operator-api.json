@@ -39,29 +39,43 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "example": "id_cmiyr3ti8000201kh6i8oadwq"
+                      "example": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "description": "Player ID"
                     },
                     "token": {
                       "type": "string",
-                      "example": "cmiyr3ti8000201kh6i8oadwq"
+                      "example": "cmiyr3ti8000201kh6i8oadwq",
+                      "description": "Player session token"
                     },
                     "currency": {
                       "type": "string",
-                      "example": "BRL"
+                      "example": "BRL",
+                      "description": "Game currency"
                     },
                     "balance": {
                       "type": "string",
-                      "example": "100"
+                      "example": "100",
+                      "description": "Player balance"
                     },
                     "language": {
                       "type": "string",
-                      "example": "en"
+                      "example": "en",
+                      "description": "Language code"
                     },
                     "nickName": {
                       "type": "string",
-                      "example": "rajat"
+                      "example": "rajat",
+                      "description": "Player nickname"
                     }
-                  }
+                  },
+                  "required": [
+                    "nickName",
+                    "language",
+                    "balance",
+                    "currency",
+                    "token",
+                    "id"
+                  ]
                 }
               }
             }
@@ -74,7 +88,8 @@
                 "type": "object",
                 "properties": {
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Unique account identifier"
                   }
                 },
                 "required": [
