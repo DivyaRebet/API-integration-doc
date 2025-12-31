@@ -637,33 +637,12 @@
                   "OK": {
                     "summary": "OK",
                     "value": {
-                      "game": "pay-day",
-                      "playerId": "d20fd18e-04ff-485f-8eb5-ddaf382d7ba5",
-                      "tenant": "kdemo",
-                      "currency": {
-                        "name": "US Dollar",
-                        "code": "USD",
-                        "symbol": "$",
-                        "type": "FIAT",
-                        "isPrefix": true,
-                        "rateToUsd": 0
-                      },
-                      "balance": "10000",
-                      "playerState": {
-                        "freeSpins": 0,
-                        "freeSpinsWinAmount": 0
-                      },
-                      "gameState": {
-                        "data": {
-                          "previous": {
-                            "minor": "300.35",
-                            "major": "1500.81",
-                            "grand": "12000.36"
-                          }
-                        },
-                        "freeSpins": 0,
-                        "freeSpinsWinAmount": 0
-                      }
+                      "id": "id_cmiyr3ti8000201kh6i8oadwq",
+                      "token": "cmiyr3ti8000201kh6i8oadwq",
+                      "currency": "BRL",
+                      "balance": "100",
+                      "language": "en",
+                      "nickName": "rajat"
                     }
                   }
                 }
