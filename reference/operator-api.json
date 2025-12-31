@@ -213,7 +213,20 @@
                   }
                 },
                 "required": [
-                  "player"
+                  "player",
+                  "token",
+                  "gameId",
+                  "gameCode",
+                  "betId",
+                  "betAmount",
+                  "winAmount",
+                  "isEndRound",
+                  "betType",
+                  "currency",
+                  "transactionId",
+                  "created",
+                  "updated",
+                  "walletType"
                 ]
               },
               "examples": {
