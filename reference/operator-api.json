@@ -288,7 +288,7 @@
         }
       }
     },
-    "/api/v1/transactions-1": {
+    "/api/v1/balance": {
       "post": {
         "summary": "Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
@@ -341,78 +341,18 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "player": {
-                    "type": "string",
-                    "description": "Player ID"
-                  },
                   "token": {
                     "type": "string",
                     "description": "Player session token"
                   },
-                  "gameId": {
-                    "type": "string",
-                    "description": "Game identifier"
-                  },
-                  "gameCode": {
-                    "type": "string",
-                    "description": "Game code"
-                  },
-                  "betId": {
-                    "type": "string",
-                    "description": "Bet reference ID"
-                  },
-                  "betAmount": {
-                    "type": "string",
-                    "description": "Bet amount"
-                  },
-                  "winAmount": {
-                    "type": "string",
-                    "description": "Win amount"
-                  },
-                  "isEndRound": {
-                    "type": "string",
-                    "description": "Indicates end of game round"
-                  },
-                  "betType": {
-                    "type": "string",
-                    "description": "Type of bet (e.g., NORMAL)"
-                  },
                   "currency": {
                     "type": "string",
                     "description": "Currency code"
-                  },
-                  "transactionId": {
-                    "type": "string",
-                    "description": "Transaction reference ID"
-                  },
-                  "created": {
-                    "type": "string",
-                    "description": "Creation timestamp"
-                  },
-                  "updated": {
-                    "type": "string",
-                    "description": "Last update timestamp"
-                  },
-                  "walletType": {
-                    "type": "string",
-                    "description": "Wallet type (e.g., CASH)"
                   }
                 },
                 "required": [
-                  "player",
                   "token",
-                  "gameId",
-                  "gameCode",
-                  "betId",
-                  "betAmount",
-                  "winAmount",
-                  "isEndRound",
-                  "betType",
-                  "currency",
-                  "transactionId",
-                  "created",
-                  "updated",
-                  "walletType"
+                  "currency"
                 ]
               },
               "examples": {
