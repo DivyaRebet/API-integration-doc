@@ -309,26 +309,14 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "id": {
-                      "type": "string",
-                      "example": "id_cmiyr3ti8000201kh6i8oadwq",
-                      "description": "Transaction reference ID"
-                    },
                     "balance": {
                       "type": "string",
                       "example": "102",
-                      "description": "Wallet Balance"
-                    },
-                    "currency": {
-                      "type": "string",
-                      "example": "BRL",
-                      "description": "Currency code"
+                      "description": "Player's Wallet Balance"
                     }
                   },
                   "required": [
-                    "id",
-                    "balance",
-                    "currency"
+                    "balance"
                   ]
                 }
               }
