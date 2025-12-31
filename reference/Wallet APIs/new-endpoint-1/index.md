@@ -1,4 +1,4 @@
 ---
-title: Operator APIs
+title: Authenticate
 hidden: false
 ---
