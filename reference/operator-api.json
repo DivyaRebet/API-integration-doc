@@ -146,43 +146,17 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "example": "id_cmiyr3ti8000201kh6i8oadwq",
-                      "description": "Player ID"
-                    },
-                    "token": {
-                      "type": "string",
-                      "example": "cmiyr3ti8000201kh6i8oadwq",
-                      "description": "Player session token"
-                    },
-                    "currency": {
-                      "type": "string",
-                      "example": "BRL",
-                      "description": "Game currency"
+                      "example": "id_cmiyr3ti8000201kh6i8oadwq"
                     },
                     "balance": {
                       "type": "string",
-                      "example": "100",
-                      "description": "Player balance"
+                      "example": "102"
                     },
-                    "language": {
+                    "currency": {
                       "type": "string",
-                      "example": "en",
-                      "description": "Language code"
-                    },
-                    "nickName": {
-                      "type": "string",
-                      "example": "rajat",
-                      "description": "Player nickname"
+                      "example": "BRL"
                     }
-                  },
-                  "required": [
-                    "nickName",
-                    "language",
-                    "balance",
-                    "currency",
-                    "token",
-                    "id"
-                  ]
+                  }
                 }
               }
             }
@@ -207,7 +181,20 @@
                 "New Example": {
                   "summary": "New Example",
                   "value": {
-                    "token": "cmiyr3ti8000201kh6i8oadwq"
+                    "player": "cmiyr3ti8000201kh6i8oadwq",
+                    "token": "",
+                    "gameId": "xxx",
+                    "gameCode": "pay-day",
+                    "betId": "xxx",
+                    "betAmount": 1,
+                    "winAmount": 2,
+                    "isEndRound": true,
+                    "betType": "NORMAL",
+                    "currency": "USD",
+                    "transactionId": "xxx",
+                    "created": "x",
+                    "updated": "x",
+                    "walletType": "CASH"
                   }
                 }
               }
