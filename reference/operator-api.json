@@ -170,46 +170,59 @@
                 "properties": {
                   "player": {
                     "type": "string",
-                    "description": "Unique account identifier"
+                    "description": "Player ID"
                   },
                   "token": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Player session token"
                   },
                   "gameId": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Game identifier"
                   },
                   "gameCode": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Game code"
                   },
                   "betId": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Bet reference ID"
                   },
                   "betAmount": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Bet amount"
                   },
                   "winAmount": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Win amount"
                   },
                   "isEndRound": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Indicates end of game round"
                   },
                   "betType": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Type of bet (e.g., NORMAL)"
                   },
                   "currency": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Currency code"
                   },
                   "transactionId": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Transaction reference ID"
                   },
                   "created": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Creation timestamp"
                   },
                   "updated": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Last update timestamp"
                   },
                   "walletType": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Wallet type (e.g., CASH)"
                   }
                 },
                 "required": [
