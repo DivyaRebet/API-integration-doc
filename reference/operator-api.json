@@ -302,9 +302,7 @@
                   "OK": {
                     "summary": "OK",
                     "value": {
-                      "id": "id_cmiyr3ti8000201kh6i8oadwq",
-                      "balance": "102",
-                      "currency": "BRL"
+                      "balance": "10000000"
                     }
                   }
                 },
@@ -421,20 +419,8 @@
                 "New Example": {
                   "summary": "New Example",
                   "value": {
-                    "player": "cmiyr3ti8000201kh6i8oadwq",
-                    "token": "",
-                    "gameId": "xxx",
-                    "gameCode": "pay-day",
-                    "betId": "xxx",
-                    "betAmount": 1,
-                    "winAmount": 2,
-                    "isEndRound": true,
-                    "betType": "NORMAL",
-                    "currency": "USD",
-                    "transactionId": "xxx",
-                    "created": "x",
-                    "updated": "x",
-                    "walletType": "CASH"
+                    "token": "cmjjtrgv90002zvyk2cre1k3a",
+                    "currency": "USD"
                   }
                 }
               }
