@@ -710,7 +710,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-rgs.kerma.games/client/player/authorize-game' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q; AWSALBCORS=+aoRgGpfYGprzER4vrfok1Vzg/qYOtfEzq3nKz4+r/fD9cmW5GjvKLUJjyPpryRmoOA5x7oh2uRGsQkXkHbt7V5mMiiC+R6RvE6NJmrbmD+G2cLeHo981/8B4Z2q' \\\n--data '{\n    \"tenant\": \"kdemo\",\n    \"game\": \"pay-day\",\n    \"language\": \"en\",\n    \"token\": \"01KDQ37EX5EPBVY9HKTE32F1PF\"\n}'",
+              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/authenticate' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"token\": \"cmiyr3ti8000201kh6i8oadwq\"\n}'",
               "language": "shell",
               "name": ""
             }
