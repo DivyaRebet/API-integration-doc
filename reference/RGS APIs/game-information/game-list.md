@@ -1,5 +1,5 @@
 ---
-title: Get Game List
+title: Game List
 excerpt: >-
   Retrieve a list of active games for a specific tenant, including
   configurations and metadata.
