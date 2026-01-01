@@ -1,6 +1,9 @@
 ---
 title: Get Balance
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
+excerpt: >-
+  This API retrieves a player's current balance in their selected currency,
+  providing up-to-date financial information for wallet display and transaction
+  validation.
 api:
   file: operator-api.json
   operationId: post_apiv1transactions-1
