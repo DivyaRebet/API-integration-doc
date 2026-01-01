@@ -6,7 +6,7 @@ excerpt: >-
   game initialization.
 api:
   file: game-list.json
-  operationId: get_gamelist-1
+  operationId: get-game
 deprecated: false
 hidden: true
 link:
