@@ -5,7 +5,7 @@ excerpt: >-
   configurations and metadata.
 api:
   file: game-list.json
-  operationId: game-list
+  operationId: gamelist
 hidden: false
 link:
   new_tab: false
