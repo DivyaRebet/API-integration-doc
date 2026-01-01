@@ -1,6 +1,8 @@
 ---
 title: Wager
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
+excerpt: >-
+  This API processes game wagers/bets, handling bet placement, validation, and
+  updating player balance and game state accordingly.
 api:
   file: game-list.json
   operationId: get_{game}game-setting-1

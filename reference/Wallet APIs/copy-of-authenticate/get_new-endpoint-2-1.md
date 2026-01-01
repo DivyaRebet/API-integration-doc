@@ -1,6 +1,8 @@
 ---
 title: Transaction
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
+excerpt: >-
+  This API records player transactions (bets and wins), updating the transaction
+  history and synchronizing financial activities across the gaming platform.
 api:
   file: operator-api.json
   operationId: post_apiv1authenticate-1

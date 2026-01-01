@@ -1,6 +1,9 @@
 ---
 title: Authorize
-excerpt: This is your first endpoint! Edit this page to start documenting your API.
+excerpt: >-
+  This API authorizes a player for game access. It validates the player token,
+  returns player balance, currency info, and game state for session
+  initialization.
 api:
   file: game-list.json
   operationId: get_{tenant}{gameId}-1
