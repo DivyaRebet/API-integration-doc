@@ -26,4 +26,4 @@ curl -X POST http://localhost:3000/tenants \
 
 <br />
 
-<br />
+After adding the operator we need few more details like games, currency details to add for that operator.
