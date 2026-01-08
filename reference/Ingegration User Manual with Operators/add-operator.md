@@ -1,12 +1,14 @@
 ---
-title: Add your operator
+title: Operator Integration
 excerpt: This demonstrates how we can add operator
 deprecated: false
 hidden: true
 metadata:
   robots: index
 ---
-To register an operator we use backoffice internally.
+## Add an operator (Commonly from our internal backoffice)
+
+To register an operator we use back-office internally.
 
 We can manually add an operator by using the API endpoint of our service entity and add specific parameters.
 
@@ -26,4 +28,4 @@ curl -X POST http://localhost:3000/tenants \
 
 <br />
 
-After adding the operator we need few more details like games, currency details to add for that operator.
+Next
