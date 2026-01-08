@@ -1626,7 +1626,7 @@
         }
       }
     },
-    "/gamelist?tenant=abc": {
+    "/gamelist?tenant={tenatId}": {
       "get": {
         "description": "",
         "operationId": "get_gamelist?tenant=abc",
@@ -1635,7 +1635,16 @@
             "description": ""
           }
         },
-        "parameters": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tenatId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
         "x-readme": {
           "code-samples": [
             {
