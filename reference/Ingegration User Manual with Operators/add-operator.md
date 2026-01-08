@@ -12,7 +12,7 @@ We can manually add an operator by using the API endpoint of our service entity 
 
 <br />
 
-```powershell
+```curl
 curl -X POST http://localhost:3000/tenants \
   -H "Content-Type: application/json" \
   -d '{
