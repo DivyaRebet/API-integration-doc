@@ -82,33 +82,30 @@ curl --location 'https://dev-demo-operator.kerma.games/api/v1/authenticate' \
 ```
 
 ### Error Codes
-**Wallet Validation Checks**
 
-The Wallet performs the following validations:
-Token validity
-Error Code: 1200 (Invalid player token)
+<br />
 
-Session validity
-Error Code: 1201 (Invalid player session)
+### Wallet Validation Checks
 
-Player status (locked / blocked)
-Error Codes: 1202, 1207
+The Wallet performs the following validations during player authorization:
 
-Wallet status
-Error Code: 1208
-
-Tenant mapping and status
-Error Codes: 1002, 1003
+| Validation Area                  | Error Code(s)  | Description                         |
+| -------------------------------- | -------------- | ----------------------------------- |
+| Token validity                   | `1200`         | Invalid player token                |
+| Session validity                 | `1201`         | Invalid player session              |
+| Player status (locked / blocked) | `1202`, `1207` | Player is locked or blocked         |
+| Wallet status                    | `1208`         | Wallet blocked                      |
+| Tenant mapping and status        | `1002`, `1003` | Tenant not found or tenant disabled |
 
 **Authorization Result**
 
 Success Response
+
 ```
 {
   "status": "OK"
 }
 ```
-
 
 Failure Behavior
 
