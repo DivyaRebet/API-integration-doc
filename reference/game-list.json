@@ -1626,39 +1626,7 @@
         }
       }
     },
-    "/gamelist?tenant={tenatId}": {
-      "get": {
-        "description": "",
-        "operationId": "get_gamelist?tenant=abc",
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "parameters": [
-          {
-            "in": "path",
-            "name": "tenatId",
-            "schema": {
-              "type": "string"
-            },
-            "required": true
-          }
-        ],
-        "x-readme": {
-          "code-samples": [
-            {
-              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/gamelist?tenat=rebet' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"token\": \"cmiyr3ti8000201kh6i8oadwq\"\n}'",
-              "language": "shell",
-              "name": ""
-            }
-          ],
-          "samples-languages": [
-            "shell"
-          ]
-        }
-      }
-    }
+    "/gamelist?tenant={tenatId}": {}
   },
   "components": {
     "securitySchemes": {}
