@@ -1,5 +1,6 @@
 ---
 title: Rollback Cases
+excerpt: To understand about rollback cases communication between RGS and Operator
 deprecated: false
 hidden: true
 metadata:
