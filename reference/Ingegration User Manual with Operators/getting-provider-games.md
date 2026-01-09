@@ -5,6 +5,11 @@ deprecated: false
 hidden: true
 metadata:
   robots: index
+next:
+  pages:
+    - title: Game Settings API Document
+      type: link
+      url: https://kermagames.readme.io/update/reference/game-setting
 ---
 ## Game Settings Retrieval
 
