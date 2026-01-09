@@ -46,4 +46,4 @@ This configuration may vary based on **tenant**, **game version**, or **regulato
 
 <br />
 
-[Game Settings API]()
+[Game Settings API](https://kermagames.readme.io/update/reference/game-setting)
