@@ -6,8 +6,6 @@ hidden: true
 metadata:
   robots: index
 ---
-<br />
-
 ### Purpose
 
 Keep RGS aware of the real wallet balance as multiple games are available on operator and user might have different balance than last request. We keep and update the balance.
@@ -44,4 +42,3 @@ curl --location 'https://api.wallet.com/api/v1/balance' \
 * Safety checks
 
 <br />
-
