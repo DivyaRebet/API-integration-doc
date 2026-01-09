@@ -35,3 +35,7 @@ Before returning the game details, RGS validates:
 * Bet limits
 * Enabled features
 * Tenant or version-specific overrides
+
+<br />
+
+<Anchor label="Get Game API" target="_blank" href="https://kermagames.readme.io/update/reference/get-game">Get Game API</Anchor>
