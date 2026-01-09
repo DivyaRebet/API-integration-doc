@@ -22,10 +22,11 @@ Process a single spin atomically.
 ### RGS Internal Validations
 
 * Session valid
-* Security Middleware Checks
+* Security Middlewares Checks
 * Game active
 * Bet allowed or not
 * Currency allowed or not
+* More checks
 
 ***
 
@@ -57,7 +58,7 @@ RESPONSE
 {
    "balance": "10000001",
    "currency": "USD",
-   "transactionId": "01KE6MD30B6N5R0TVEE5HXAK16"
+   "transactionId": "01KE6MD30B6N5R0TVEE5HXAK16" --via wallet
 }
 
 ```
@@ -77,3 +78,21 @@ RESPONSE
 ```json
 {"code":1301,"message":"Insufficient balance"}
 ```
+
+<br />
+
+### Transaction Error Codes
+
+The following error codes may be returned during bet, win, or rollback transactions.
+
+| Error Code | Description                     | When It Occurs                                            |
+| ---------: | ------------------------------- | --------------------------------------------------------- |
+|     `1300` | Invalid bet amount              | Bet amount is outside allowed limits or malformed         |
+|     `1301` | Insufficient balance            | Player balance is not enough to place the bet             |
+|     `2400` | Bet not found                   | Referenced bet transaction does not exist                 |
+|     `2401` | Duplicate transaction           | Same transaction ID is sent more than once                |
+|     `2403` | Transaction already processed   | Transaction has already been completed                    |
+|     `2404` | Transaction already rolled back | Rollback requested for an already rolled-back transaction |
+|     `2405` | Invalid rollback                | Rollback request is invalid or inconsistent               |
+|     `2406` | Invalid transaction ID          | Transaction ID format is invalid or missing               |
+|     `3000` | Internal server error           | Unexpected system error during transaction processing     |
