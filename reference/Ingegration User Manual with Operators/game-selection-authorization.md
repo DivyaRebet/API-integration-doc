@@ -81,11 +81,9 @@ curl --location 'https://dev-demo-operator.kerma.games/api/v1/authenticate' \
 }'
 ```
 
-### Error Codes
-
 <br />
 
-### Wallet Validation Checks
+### Wallet Validation Checks (Error Codes)
 
 The Wallet performs the following validations during player authorization:
 
