@@ -31,11 +31,11 @@ curl --location 'https://api.wallet.com/api/v1/balance' \
 
 **Response:**
 
-
-```REPONSE
+```
 {
    "balance": "10000000"
-}```
+}
+```
 
 **Used for:**
 
@@ -44,3 +44,4 @@ curl --location 'https://api.wallet.com/api/v1/balance' \
 * Safety checks
 
 <br />
+
