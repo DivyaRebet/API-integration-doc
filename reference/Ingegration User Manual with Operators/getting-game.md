@@ -1,6 +1,5 @@
 ---
-title: Getting game
-excerpt: This demonstrates how we get one particular game and it's launch
+title: Getting Game for Operator
 deprecated: false
 hidden: true
 metadata:
