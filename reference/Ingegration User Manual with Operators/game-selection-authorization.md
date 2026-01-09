@@ -11,7 +11,7 @@ metadata:
 
 Create a secure session for a player to launch and play a specific game.
 
----
+***
 
 ### Player Chooses Game
 
@@ -19,20 +19,20 @@ Create a secure session for a player to launch and play a specific game.
 
 The player selects a game from the Operator’s casino lobby.
 
----
+***
 
 ### Operator Creates Session Token
 
 The Operator generates a **session token** containing the following information:
 
-- `playerId`
-- `tenantCode`
-- `currency`
-- `mode` (`real` / `demo`)
+* `playerId`
+* `tenantCode`
+* `currency`
+* `mode` (`real` / `demo`)
 
 This token uniquely represents a player session and is used during game authorization.
 
----
+***
 
 ### Build Game Launch URL
 
@@ -44,15 +44,16 @@ t=tenantCode
 &s=sessionToken
 &l=language
 
----
+***
+
 ### Redirect / iFrame Load
 
 **Flow:** Operator → Player Browser
 
-- The game client is loaded via redirect or iFrame
-- Communication between the game client and RGS begins
+* The game client is loaded via redirect or iFrame
+* Communication between the game client and RGS begins
 
----
+***
 
 ## Player Authorization (Game Start)
 
@@ -60,7 +61,7 @@ t=tenantCode
 
 Ensure that only valid and authorized players are allowed to start gameplay.
 
----
+***
 
 ### Authenticate Session
 
@@ -70,26 +71,16 @@ RGS validates the session by calling the Operator’s Wallet service.
 
 POST /api/v1/authenticate
 
-
 **Example Request**
 
-```bash
+```curl
 curl --location 'https://dev-demo-operator.kerma.games/api/v1/authenticate' \
 --header 'Content-Type: application/json' \
 --data '{
   "token": "cmiyr3ti8000201kh6i8oadwq"
 }'
+```
 
-
-**Example Response**
-{
-  "id": "id_cmiyr3ti8000201kh6i8oadwq",
-  "token": "cmiyr3ti8000201kh6i8oadwq",
-  "currency": "BRL",
-  "balance": "100",
-  "language": "en",
-  "nickName": "nikhil"
-}
 
 **Wallet Validation Checks*
 
@@ -115,20 +106,26 @@ Tenant mapping and status
 
 Error Codes: 1002, 1003
 
+
 **Authorization Result**
 
 Success Response
-
+```
 {
   "status": "OK"
 }
+```
 
 
 Failure Behavior
 
 If authorization fails, the game is blocked and an error response is returned using one of the defined error codes, for example:
 
+```
 {
   "errorCode": 1207,
   "message": "Player blocked"
 }
+```
+
+
