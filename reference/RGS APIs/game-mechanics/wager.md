@@ -7,7 +7,7 @@ api:
   file: game-list.json
   operationId: get_{game}game-setting-1
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
