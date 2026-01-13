@@ -4,7 +4,7 @@ excerpt: >-
   This is the flow diagram to understand about Architecture and Integration
   steps for any operator 
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
