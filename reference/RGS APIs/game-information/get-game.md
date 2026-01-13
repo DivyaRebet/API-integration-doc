@@ -8,7 +8,7 @@ api:
   file: game-list.json
   operationId: get_gamelist-1
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
