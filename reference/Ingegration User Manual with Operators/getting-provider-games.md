@@ -2,7 +2,7 @@
 title: Getting Provider Games
 excerpt: This is to show how can we get provider games with Kerma RGS.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
