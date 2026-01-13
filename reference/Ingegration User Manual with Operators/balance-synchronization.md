@@ -2,7 +2,7 @@
 title: Balance Synchronization
 excerpt: This is to demonstrate how can we fetch player balances from an Operator.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
