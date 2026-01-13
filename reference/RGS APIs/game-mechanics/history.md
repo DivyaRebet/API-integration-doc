@@ -7,7 +7,7 @@ api:
   file: game-list.json
   operationId: post_{game}wager-1
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
