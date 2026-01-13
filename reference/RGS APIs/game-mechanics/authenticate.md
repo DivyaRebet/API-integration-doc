@@ -8,7 +8,7 @@ api:
   file: game-list.json
   operationId: get_{tenant}{gameId}-1
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
