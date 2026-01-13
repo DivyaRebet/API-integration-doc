@@ -4,7 +4,7 @@ excerpt: >-
   Explore the core gameplay flow, including player authorization, game
   initialization, wagering actions, and retrieval of game history.
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
