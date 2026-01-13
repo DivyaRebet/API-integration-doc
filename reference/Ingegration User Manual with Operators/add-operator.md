@@ -2,7 +2,7 @@
 title: Operator Integration
 excerpt: This demonstrates how we can add operator
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
