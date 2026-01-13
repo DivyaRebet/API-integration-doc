@@ -5,7 +5,7 @@ excerpt: >-
   scenarios, including how the tenant interacts with the RGS during game
   sessions.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
