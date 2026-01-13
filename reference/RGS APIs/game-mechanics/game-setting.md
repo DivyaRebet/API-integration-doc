@@ -7,7 +7,7 @@ api:
   file: game-list.json
   operationId: post_clientplayerauthorize-game-1
 deprecated: false
-hidden: true
+hidden: false
 link:
   new_tab: false
 metadata:
