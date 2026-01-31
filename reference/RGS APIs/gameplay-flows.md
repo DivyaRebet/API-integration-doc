@@ -1,9 +1,11 @@
 ---
 title: Gameplay flows
 excerpt: >-
-  This section provides sequence diagrams and descriptions of typical gameplay
-  scenarios, including how the tenant interacts with the RGS during game
-  sessions.
+  This section describes the gameplay flows and the sequence of interactions
+  between the tenant and the RGS during a game session. It covers the lifecycle
+  of a game, including session initialization, player actions, game processing,
+  and result handling, and helps clarify the responsibilities of each system
+  involved.
 deprecated: false
 hidden: false
 metadata:
