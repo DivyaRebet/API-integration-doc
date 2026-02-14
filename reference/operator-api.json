@@ -368,6 +368,87 @@
           ]
         }
       }
+    },
+    "/api/v1/balance-1": {
+      "post": {
+        "summary": "Copy of Copy of Copy of New Endpoint",
+        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "operationId": "post_apiv1transactions-1-1",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": {
+                      "balance": "10000000"
+                    }
+                  }
+                },
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "balance": {
+                      "type": "string",
+                      "example": "102",
+                      "description": "Player's Wallet Balance"
+                    }
+                  },
+                  "required": [
+                    "balance"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "description": "Player session token"
+                  },
+                  "currency": {
+                    "type": "string",
+                    "description": "Currency code"
+                  }
+                },
+                "required": [
+                  "token",
+                  "currency"
+                ]
+              },
+              "examples": {
+                "New Example": {
+                  "summary": "New Example",
+                  "value": {
+                    "token": "cmjjtrgv90002zvyk2cre1k3a",
+                    "currency": "USD"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-readme": {
+          "code-samples": [
+            {
+              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/balance' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"token\": \"cmjjtrgv90002zvyk2cre1k3a\",\n    \"currency\": \"USD\"\n}'\n",
+              "language": "shell",
+              "name": ""
+            }
+          ],
+          "samples-languages": [
+            "shell"
+          ]
+        }
+      }
     }
   },
   "components": {
