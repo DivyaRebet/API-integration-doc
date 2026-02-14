@@ -370,7 +370,7 @@
       }
     },
     "/api/v1/balance-1": {},
-    "/api/v1/transactions-1": {
+    "/api/v1/rollback1": {
       "post": {
         "summary": "Copy of Copy of New Endpoint",
         "description": "This is your first endpoint! Edit this page to start documenting your API.",
