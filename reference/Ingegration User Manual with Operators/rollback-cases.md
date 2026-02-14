@@ -27,7 +27,7 @@ Protect against financial inconsistency.
 **RGS → Operator Wallet**
 
 ```
-POST /api/v1/transactions (rollback=true)
+POST /api/v1/rollback
 
 ```
 
