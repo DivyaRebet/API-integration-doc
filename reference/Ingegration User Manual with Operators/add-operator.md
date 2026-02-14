@@ -22,7 +22,7 @@ curl -X POST http://localhost:3000/tenants \
     "code": "KARMA123",
     "endpoint": "https://api.karmagames.io",
     "status": "ACTIVE",
-    "integrationMode": "INHOUSE"
+    "integrationMode": "SEAMLESS"
   }'
 ```
 
