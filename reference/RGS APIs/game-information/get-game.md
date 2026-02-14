@@ -1,9 +1,10 @@
 ---
 title: 'Get Game '
 excerpt: >-
-  This API retrieves detailed configuration for a specific game. Returns game
-  metadata, URLs, financial parameters (RTP, max win, base bet), and status for
-  game initialization.
+  This API retrieves the detailed configuration of a specific game. It returns
+  game metadata (such as ID, name, description, and code), operational status,
+  frontend and logic service URLs, game type, and timestamps for creation and
+  last update.
 api:
   file: game-list.json
   operationId: get_gamelist-1
