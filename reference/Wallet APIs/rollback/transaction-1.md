@@ -1,5 +1,5 @@
 ---
-title: Copy of Transaction
+title: rollback
 excerpt: >-
   This API records player transactions (bets and wins), updating the transaction
   history and synchronizing financial activities across the gaming platform.
