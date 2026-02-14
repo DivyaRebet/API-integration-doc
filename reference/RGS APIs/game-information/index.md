@@ -2,7 +2,7 @@
 title: Game Information
 excerpt: >-
   The Game Information section provides endpoints for retrieving metadata and
-  configuration details of games available to the tenant..
+  configuration details of games available to the tenant.
 hidden: false
 link:
   new_tab: false
