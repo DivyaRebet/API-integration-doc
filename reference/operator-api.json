@@ -392,6 +392,12 @@
                   "required": [
                     "balance"
                   ]
+                },
+                "examples": {
+                  "OK": {
+                    "summary": "OK",
+                    "value": "{\n    \"tenantTransactionId\": \"01KHY49FQ8Y7HA6THDTPGDNNPP\",\n    \"balance\": \"2000\",\n    \"currency\": \"RCH\"\n}"
+                  }
                 }
               }
             }
