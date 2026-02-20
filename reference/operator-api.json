@@ -383,20 +383,26 @@
                 "schema": {
                   "type": "object",
                   "properties": {
+                    "tenantTransactionId": {
+                      "type": "string"
+                    },
                     "balance": {
-                      "type": "string",
-                      "example": "102",
-                      "description": "Player's Wallet Balance"
+                      "type": "string"
+                    },
+                    "currency": {
+                      "type": "string"
                     }
                   },
                   "required": [
-                    "balance"
+                    "tenantTransactionId",
+                    "balance",
+                    "currency"
                   ]
                 },
                 "examples": {
                   "OK": {
                     "summary": "OK",
-                    "value": "{\n    \"tenantTransactionId\": \"01KHY49FQ8Y7HA6THDTPGDNNPP\",\n    \"balance\": \"2000\",\n    \"currency\": \"RCH\"\n}"
+                    "value": "{\n    \"tenantTransactionId\": \"01KHY49FQ8Y7HA6THDTPGDNNPP\",\n    \"balance\": \"2000\",\n    \"currency\": \"RCH\",\n}"
                   }
                 }
               }
