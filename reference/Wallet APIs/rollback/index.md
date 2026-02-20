@@ -2,7 +2,7 @@
 title: RollBack
 excerpt: The Rollback section provides endpoints to rollback the transaction.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 next:
