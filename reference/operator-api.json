@@ -409,18 +409,50 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "token": {
+                  "originalTransactionId": {
                     "type": "string",
                     "description": "Player session token"
                   },
-                  "currency": {
+                  "rollbackTransactionId": {
                     "type": "string",
                     "description": "Currency code"
+                  },
+                  "token": {
+                    "type": "string"
+                  },
+                  "gameId": {
+                    "type": "string"
+                  },
+                  "gameCode": {
+                    "type": "string"
+                  },
+                  "tenant": {
+                    "type": "string"
+                  },
+                  "currency": {
+                    "type": "string"
+                  },
+                  "created": {
+                    "type": "string"
+                  },
+                  "updated": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string"
                   }
                 },
                 "required": [
+                  "originalTransactionId",
+                  "reason",
+                  "updated",
+                  "created",
+                  "currency",
+                  "tenant",
+                  "gameCode",
+                  "gameId",
                   "token",
-                  "currency"
+                  "rollbackTransactionId"
                 ]
               },
               "examples": {
