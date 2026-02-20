@@ -380,14 +380,6 @@
             "description": "Successful response",
             "content": {
               "application/json": {
-                "examples": {
-                  "OK": {
-                    "summary": "OK",
-                    "value": {
-                      "balance": "10000000"
-                    }
-                  }
-                },
                 "schema": {
                   "type": "object",
                   "properties": {
@@ -428,10 +420,7 @@
               "examples": {
                 "New Example": {
                   "summary": "New Example",
-                  "value": {
-                    "token": "cmjjtrgv90002zvyk2cre1k3a",
-                    "currency": "USD"
-                  }
+                  "value": "{\n    \"originalTransactionId\": \"xxx\",\n    \"rollbackTransactionId\": \"1234\",\n    \"token\": \"01KEBCX04PCJWC0KCAW4WB1EXD\",\n    \"gameId\": \"xxx\",\n    \"gameCode\": \"pay-day\",\n    \"tenant\": \"kdemo\",\n    \"currency\": \"USD\",\n    \"created\": \"x\",\n    \"updated\": \"x\",\n    \"reason\": \"rollback\"\n}"
                 }
               }
             }
