@@ -417,7 +417,7 @@
                     "type": "string",
                     "description": "Currency code"
                   },
-                  "token": {
+                  "playerId": {
                     "type": "string"
                   },
                   "gameId": {
@@ -451,7 +451,7 @@
                   "tenant",
                   "gameCode",
                   "gameId",
-                  "token",
+                  "playerId",
                   "rollbackTransactionId"
                 ]
               },
