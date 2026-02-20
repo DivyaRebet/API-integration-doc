@@ -411,35 +411,45 @@
                 "properties": {
                   "originalTransactionId": {
                     "type": "string",
-                    "description": "Player session token"
+                    "description": "Player session token",
+                    "default": "xxx"
                   },
                   "rollbackTransactionId": {
                     "type": "string",
-                    "description": "Currency code"
+                    "description": "Currency code",
+                    "default": "1234"
                   },
                   "playerId": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "01KEBCX04PCJWC0KCAW4WB1EXD"
                   },
                   "gameId": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "xxx"
                   },
                   "gameCode": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "pay-day"
                   },
                   "tenant": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "kdemo"
                   },
                   "currency": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "USD"
                   },
                   "created": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "x"
                   },
                   "updated": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "x"
                   },
                   "reason": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "rollback"
                   }
                 },
                 "required": [
