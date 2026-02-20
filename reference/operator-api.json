@@ -477,7 +477,7 @@
         "x-readme": {
           "code-samples": [
             {
-              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/balance' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"token\": \"cmjjtrgv90002zvyk2cre1k3a\",\n    \"currency\": \"USD\"\n}'\n",
+              "code": "curl --location 'https://dev-demo-operator.kerma.games/api/v1/rollback' \\\n--header 'Content-Type: application/json' \\\n--header 'Cookie: AWSALB=MHfV9AQFepPMGsSDwbW4tSOhXynMG/kF5sheuVLsyRZuO6cXMTaRFL9oI5nfpMxrEoH+kNYNSHJA5jd7OZZaj10R34XZx59jZE6ltyx7ZWY2DSWBSivsisYJBPaz; AWSALBCORS=MHfV9AQFepPMGsSDwbW4tSOhXynMG/kF5sheuVLsyRZuO6cXMTaRFL9oI5nfpMxrEoH+kNYNSHJA5jd7OZZaj10R34XZx59jZE6ltyx7ZWY2DSWBSivsisYJBPaz; AWSALB=GC8ODluP/y0zCWY7zjnrbe7mwhct+aTs506nGG88hKFXT/muT7ZlN/eV1t4STbk2ZTRMKhuLD3pOXxTudnyhJecuFfoFYnvCJc687WxEb8ruFMl/zH4EId9N5cvw; AWSALBCORS=GC8ODluP/y0zCWY7zjnrbe7mwhct+aTs506nGG88hKFXT/muT7ZlN/eV1t4STbk2ZTRMKhuLD3pOXxTudnyhJecuFfoFYnvCJc687WxEb8ruFMl/zH4EId9N5cvw' \\\n--data '{\n    \"originalTransactionId\": \"xxx\",\n    \"rollbackTransactionId\": \"1234\",\n    \"playerId\": \"01KEBCX04PCJWC0KCAW4WB1EXD\",\n    \"gameId\": \"xxx\",\n    \"gameCode\": \"pay-day\",\n    \"tenant\": \"kdemo\",\n    \"currency\": \"USD\",\n    \"created\": \"x\",\n    \"updated\": \"x\",\n    \"reason\": \"rollback\"\n}'",
               "language": "shell",
               "name": ""
             }
