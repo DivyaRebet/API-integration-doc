@@ -123,8 +123,8 @@
     },
     "/api/v1/transactions": {
       "post": {
-        "summary": "Copy of New Endpoint",
-        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "summary": "Transaction",
+        "description": "This API records player transactions (bets and wins), updating the transaction history and synchronizing financial activities across the gaming platform.",
         "operationId": "post_apiv1authenticate-1",
         "responses": {
           "200": {
@@ -176,11 +176,11 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "player": {
+                  "playerId": {
                     "type": "string",
                     "description": "Player ID"
                   },
-                  "token": {
+                  "parentBetId": {
                     "type": "string",
                     "description": "Player session token"
                   },
@@ -234,8 +234,8 @@
                   }
                 },
                 "required": [
-                  "player",
-                  "token",
+                  "playerId",
+                  "parentBetId",
                   "gameId",
                   "gameCode",
                   "betId",
