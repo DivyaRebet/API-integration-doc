@@ -205,7 +205,7 @@
                     "description": "Win amount"
                   },
                   "isEndRound": {
-                    "type": "string",
+                    "type": "boolean",
                     "description": "Indicates end of game round"
                   },
                   "betType": {
