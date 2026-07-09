@@ -376,8 +376,8 @@
     "/api/v1/rollback1": {},
     "/api/v1/rollback": {
       "post": {
-        "summary": "Copy of Copy of Copy of New Endpoint",
-        "description": "This is your first endpoint! Edit this page to start documenting your API.",
+        "summary": "Rollback",
+        "description": "This API rollbacks the transaction id which is passed in the request.",
         "operationId": "post_apiv1transactions-1-1",
         "responses": {
           "200": {
@@ -460,6 +460,10 @@
                   "reason": {
                     "type": "string",
                     "default": "rollback"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "session token"
                   }
                 },
                 "required": [
