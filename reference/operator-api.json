@@ -182,7 +182,7 @@
                   },
                   "parentBetId": {
                     "type": "string",
-                    "description": "Player session token"
+                    "description": "Round Id"
                   },
                   "gameId": {
                     "type": "string",
