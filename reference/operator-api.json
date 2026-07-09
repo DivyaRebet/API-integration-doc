@@ -231,6 +231,10 @@
                   "walletType": {
                     "type": "string",
                     "description": "Wallet type (e.g., CASH)"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "session token"
                   }
                 },
                 "required": [
